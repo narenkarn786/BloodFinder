@@ -1,0 +1,2125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities1">
+    <EntitySetMapping Name="AQ__INTERNET_AGENTS">
+      <EntityTypeMapping TypeName="Model.AQ__INTERNET_AGENTS">
+        <MappingFragment StoreEntitySet="AQ$_INTERNET_AGENTS">
+          <ScalarProperty Name="AGENT_NAME" ColumnName="AGENT_NAME" />
+          <ScalarProperty Name="PROTOCOL" ColumnName="PROTOCOL" />
+          <ScalarProperty Name="SPARE1" ColumnName="SPARE1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AQ__QUEUE_TABLES">
+      <EntityTypeMapping TypeName="Model.AQ__QUEUE_TABLES">
+        <MappingFragment StoreEntitySet="AQ$_QUEUE_TABLES">
+          <ScalarProperty Name="SCHEMA" ColumnName="SCHEMA" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="UDATA_TYPE" ColumnName="UDATA_TYPE" />
+          <ScalarProperty Name="OBJNO" ColumnName="OBJNO" />
+          <ScalarProperty Name="FLAGS" ColumnName="FLAGS" />
+          <ScalarProperty Name="SORT_COLS" ColumnName="SORT_COLS" />
+          <ScalarProperty Name="TIMEZONE" ColumnName="TIMEZONE" />
+          <ScalarProperty Name="TABLE_COMMENT" ColumnName="TABLE_COMMENT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AQ__QUEUES">
+      <EntityTypeMapping TypeName="Model.AQ__QUEUES">
+        <MappingFragment StoreEntitySet="AQ$_QUEUES">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="EVENTID" ColumnName="EVENTID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="TABLE_OBJNO" ColumnName="TABLE_OBJNO" />
+          <ScalarProperty Name="USAGE" ColumnName="USAGE" />
+          <ScalarProperty Name="ENABLE_FLAG" ColumnName="ENABLE_FLAG" />
+          <ScalarProperty Name="MAX_RETRIES" ColumnName="MAX_RETRIES" />
+          <ScalarProperty Name="RETRY_DELAY" ColumnName="RETRY_DELAY" />
+          <ScalarProperty Name="PROPERTIES" ColumnName="PROPERTIES" />
+          <ScalarProperty Name="RET_TIME" ColumnName="RET_TIME" />
+          <ScalarProperty Name="QUEUE_COMMENT" ColumnName="QUEUE_COMMENT" />
+          <ScalarProperty Name="MEMORY_THRESHOLD" ColumnName="MEMORY_THRESHOLD" />
+          <ScalarProperty Name="SERVICE_NAME" ColumnName="SERVICE_NAME" />
+          <ScalarProperty Name="NETWORK_NAME" ColumnName="NETWORK_NAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AQ__SCHEDULES">
+      <EntityTypeMapping TypeName="Model.AQ__SCHEDULES">
+        <MappingFragment StoreEntitySet="AQ$_SCHEDULES">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="DESTINATION" ColumnName="DESTINATION" />
+          <ScalarProperty Name="START_TIME" ColumnName="START_TIME" />
+          <ScalarProperty Name="DURATION" ColumnName="DURATION" />
+          <ScalarProperty Name="NEXT_TIME" ColumnName="NEXT_TIME" />
+          <ScalarProperty Name="LATENCY" ColumnName="LATENCY" />
+          <ScalarProperty Name="LAST_TIME" ColumnName="LAST_TIME" />
+          <ScalarProperty Name="JOBNO" ColumnName="JOBNO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BLOODDONORs">
+      <EntityTypeMapping TypeName="Model.BLOODDONOR">
+        <MappingFragment StoreEntitySet="BLOODDONOR">
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="PHONENUMBER" ColumnName="PHONENUMBER" />
+          <ScalarProperty Name="BLOODGROUP" ColumnName="BLOODGROUP" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="FILE" ColumnName="FILE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BLOODREQUESTORs">
+      <EntityTypeMapping TypeName="Model.BLOODREQUESTOR">
+        <MappingFragment StoreEntitySet="BLOODREQUESTOR">
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="PHONENUMBER" ColumnName="PHONENUMBER" />
+          <ScalarProperty Name="BLOODGROUP" ColumnName="BLOODGROUP" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="MESSAGE" ColumnName="MESSAGE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DEF__AQCALL">
+      <EntityTypeMapping TypeName="Model.DEF__AQCALL">
+        <MappingFragment StoreEntitySet="DEF$_AQCALL">
+          <ScalarProperty Name="Q_NAME" ColumnName="Q_NAME" />
+          <ScalarProperty Name="MSGID" ColumnName="MSGID" />
+          <ScalarProperty Name="CORRID" ColumnName="CORRID" />
+          <ScalarProperty Name="PRIORITY" ColumnName="PRIORITY" />
+          <ScalarProperty Name="STATE" ColumnName="STATE" />
+          <ScalarProperty Name="DELAY" ColumnName="DELAY" />
+          <ScalarProperty Name="EXPIRATION" ColumnName="EXPIRATION" />
+          <ScalarProperty Name="TIME_MANAGER_INFO" ColumnName="TIME_MANAGER_INFO" />
+          <ScalarProperty Name="LOCAL_ORDER_NO" ColumnName="LOCAL_ORDER_NO" />
+          <ScalarProperty Name="CHAIN_NO" ColumnName="CHAIN_NO" />
+          <ScalarProperty Name="CSCN" ColumnName="CSCN" />
+          <ScalarProperty Name="DSCN" ColumnName="DSCN" />
+          <ScalarProperty Name="ENQ_TIME" ColumnName="ENQ_TIME" />
+          <ScalarProperty Name="ENQ_UID" ColumnName="ENQ_UID" />
+          <ScalarProperty Name="ENQ_TID" ColumnName="ENQ_TID" />
+          <ScalarProperty Name="DEQ_TIME" ColumnName="DEQ_TIME" />
+          <ScalarProperty Name="DEQ_UID" ColumnName="DEQ_UID" />
+          <ScalarProperty Name="DEQ_TID" ColumnName="DEQ_TID" />
+          <ScalarProperty Name="RETRY_COUNT" ColumnName="RETRY_COUNT" />
+          <ScalarProperty Name="EXCEPTION_QSCHEMA" ColumnName="EXCEPTION_QSCHEMA" />
+          <ScalarProperty Name="EXCEPTION_QUEUE" ColumnName="EXCEPTION_QUEUE" />
+          <ScalarProperty Name="STEP_NO" ColumnName="STEP_NO" />
+          <ScalarProperty Name="RECIPIENT_KEY" ColumnName="RECIPIENT_KEY" />
+          <ScalarProperty Name="DEQUEUE_MSGID" ColumnName="DEQUEUE_MSGID" />
+          <ScalarProperty Name="USER_DATA" ColumnName="USER_DATA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DEF__AQERROR">
+      <EntityTypeMapping TypeName="Model.DEF__AQERROR">
+        <MappingFragment StoreEntitySet="DEF$_AQERROR">
+          <ScalarProperty Name="Q_NAME" ColumnName="Q_NAME" />
+          <ScalarProperty Name="MSGID" ColumnName="MSGID" />
+          <ScalarProperty Name="CORRID" ColumnName="CORRID" />
+          <ScalarProperty Name="PRIORITY" ColumnName="PRIORITY" />
+          <ScalarProperty Name="STATE" ColumnName="STATE" />
+          <ScalarProperty Name="DELAY" ColumnName="DELAY" />
+          <ScalarProperty Name="EXPIRATION" ColumnName="EXPIRATION" />
+          <ScalarProperty Name="TIME_MANAGER_INFO" ColumnName="TIME_MANAGER_INFO" />
+          <ScalarProperty Name="LOCAL_ORDER_NO" ColumnName="LOCAL_ORDER_NO" />
+          <ScalarProperty Name="CHAIN_NO" ColumnName="CHAIN_NO" />
+          <ScalarProperty Name="CSCN" ColumnName="CSCN" />
+          <ScalarProperty Name="DSCN" ColumnName="DSCN" />
+          <ScalarProperty Name="ENQ_TIME" ColumnName="ENQ_TIME" />
+          <ScalarProperty Name="ENQ_UID" ColumnName="ENQ_UID" />
+          <ScalarProperty Name="ENQ_TID" ColumnName="ENQ_TID" />
+          <ScalarProperty Name="DEQ_TIME" ColumnName="DEQ_TIME" />
+          <ScalarProperty Name="DEQ_UID" ColumnName="DEQ_UID" />
+          <ScalarProperty Name="DEQ_TID" ColumnName="DEQ_TID" />
+          <ScalarProperty Name="RETRY_COUNT" ColumnName="RETRY_COUNT" />
+          <ScalarProperty Name="EXCEPTION_QSCHEMA" ColumnName="EXCEPTION_QSCHEMA" />
+          <ScalarProperty Name="EXCEPTION_QUEUE" ColumnName="EXCEPTION_QUEUE" />
+          <ScalarProperty Name="STEP_NO" ColumnName="STEP_NO" />
+          <ScalarProperty Name="RECIPIENT_KEY" ColumnName="RECIPIENT_KEY" />
+          <ScalarProperty Name="DEQUEUE_MSGID" ColumnName="DEQUEUE_MSGID" />
+          <ScalarProperty Name="USER_DATA" ColumnName="USER_DATA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DEF__CALLDEST">
+      <EntityTypeMapping TypeName="Model.DEF__CALLDEST">
+        <MappingFragment StoreEntitySet="DEF$_CALLDEST">
+          <ScalarProperty Name="ENQ_TID" ColumnName="ENQ_TID" />
+          <ScalarProperty Name="STEP_NO" ColumnName="STEP_NO" />
+          <ScalarProperty Name="DBLINK" ColumnName="DBLINK" />
+          <ScalarProperty Name="SCHEMA_NAME" ColumnName="SCHEMA_NAME" />
+          <ScalarProperty Name="PACKAGE_NAME" ColumnName="PACKAGE_NAME" />
+          <ScalarProperty Name="CATCHUP" ColumnName="CATCHUP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DEF__DEFAULTDEST">
+      <EntityTypeMapping TypeName="Model.DEF__DEFAULTDEST">
+        <MappingFragment StoreEntitySet="DEF$_DEFAULTDEST">
+          <ScalarProperty Name="DBLINK" ColumnName="DBLINK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DEF__DESTINATION">
+      <EntityTypeMapping TypeName="Model.DEF__DESTINATION">
+        <MappingFragment StoreEntitySet="DEF$_DESTINATION">
+          <ScalarProperty Name="DBLINK" ColumnName="DBLINK" />
+          <ScalarProperty Name="LAST_DELIVERED" ColumnName="LAST_DELIVERED" />
+          <ScalarProperty Name="LAST_ENQ_TID" ColumnName="LAST_ENQ_TID" />
+          <ScalarProperty Name="LAST_SEQ" ColumnName="LAST_SEQ" />
+          <ScalarProperty Name="DISABLED" ColumnName="DISABLED" />
+          <ScalarProperty Name="JOB" ColumnName="JOB" />
+          <ScalarProperty Name="LAST_TXN_COUNT" ColumnName="LAST_TXN_COUNT" />
+          <ScalarProperty Name="LAST_ERROR_NUMBER" ColumnName="LAST_ERROR_NUMBER" />
+          <ScalarProperty Name="LAST_ERROR_MESSAGE" ColumnName="LAST_ERROR_MESSAGE" />
+          <ScalarProperty Name="APPLY_INIT" ColumnName="APPLY_INIT" />
+          <ScalarProperty Name="CATCHUP" ColumnName="CATCHUP" />
+          <ScalarProperty Name="ALTERNATE" ColumnName="ALTERNATE" />
+          <ScalarProperty Name="TOTAL_TXN_COUNT" ColumnName="TOTAL_TXN_COUNT" />
+          <ScalarProperty Name="TOTAL_PROP_TIME_THROUGHPUT" ColumnName="TOTAL_PROP_TIME_THROUGHPUT" />
+          <ScalarProperty Name="TOTAL_PROP_TIME_LATENCY" ColumnName="TOTAL_PROP_TIME_LATENCY" />
+          <ScalarProperty Name="TO_COMMUNICATION_SIZE" ColumnName="TO_COMMUNICATION_SIZE" />
+          <ScalarProperty Name="FROM_COMMUNICATION_SIZE" ColumnName="FROM_COMMUNICATION_SIZE" />
+          <ScalarProperty Name="FLAG" ColumnName="FLAG" />
+          <ScalarProperty Name="SPARE1" ColumnName="SPARE1" />
+          <ScalarProperty Name="SPARE2" ColumnName="SPARE2" />
+          <ScalarProperty Name="SPARE3" ColumnName="SPARE3" />
+          <ScalarProperty Name="SPARE4" ColumnName="SPARE4" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DEF__ERROR">
+      <EntityTypeMapping TypeName="Model.DEF__ERROR">
+        <MappingFragment StoreEntitySet="DEF$_ERROR">
+          <ScalarProperty Name="ENQ_TID" ColumnName="ENQ_TID" />
+          <ScalarProperty Name="ORIGIN_TRAN_DB" ColumnName="ORIGIN_TRAN_DB" />
+          <ScalarProperty Name="ORIGIN_ENQ_TID" ColumnName="ORIGIN_ENQ_TID" />
+          <ScalarProperty Name="DESTINATION" ColumnName="DESTINATION" />
+          <ScalarProperty Name="STEP_NO" ColumnName="STEP_NO" />
+          <ScalarProperty Name="RECEIVER" ColumnName="RECEIVER" />
+          <ScalarProperty Name="ENQ_TIME" ColumnName="ENQ_TIME" />
+          <ScalarProperty Name="ERROR_NUMBER" ColumnName="ERROR_NUMBER" />
+          <ScalarProperty Name="ERROR_MSG" ColumnName="ERROR_MSG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DEF__LOB">
+      <EntityTypeMapping TypeName="Model.DEF__LOB">
+        <MappingFragment StoreEntitySet="DEF$_LOB">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ENQ_TID" ColumnName="ENQ_TID" />
+          <ScalarProperty Name="BLOB_COL" ColumnName="BLOB_COL" />
+          <ScalarProperty Name="CLOB_COL" ColumnName="CLOB_COL" />
+          <ScalarProperty Name="NCLOB_COL" ColumnName="NCLOB_COL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DEF__PROPAGATOR">
+      <EntityTypeMapping TypeName="Model.DEF__PROPAGATOR">
+        <MappingFragment StoreEntitySet="DEF$_PROPAGATOR">
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="CREATED" ColumnName="CREATED" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DEF__PUSHED_TRANSACTIONS">
+      <EntityTypeMapping TypeName="Model.DEF__PUSHED_TRANSACTIONS">
+        <MappingFragment StoreEntitySet="DEF$_PUSHED_TRANSACTIONS">
+          <ScalarProperty Name="SOURCE_SITE_ID" ColumnName="SOURCE_SITE_ID" />
+          <ScalarProperty Name="LAST_TRAN_ID" ColumnName="LAST_TRAN_ID" />
+          <ScalarProperty Name="DISABLED" ColumnName="DISABLED" />
+          <ScalarProperty Name="SOURCE_SITE" ColumnName="SOURCE_SITE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HELPs">
+      <EntityTypeMapping TypeName="Model.HELP">
+        <MappingFragment StoreEntitySet="HELP">
+          <ScalarProperty Name="TOPIC" ColumnName="TOPIC" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="INFO" ColumnName="INFO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGINs">
+      <EntityTypeMapping TypeName="Model.LOGIN">
+        <MappingFragment StoreEntitySet="LOGIN">
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="CONFIRMPASSWORD" ColumnName="CONFIRMPASSWORD" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="PHONENO" ColumnName="PHONENO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_AGE_SPILL_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_AGE_SPILL_">
+        <MappingFragment StoreEntitySet="LOGMNR_AGE_SPILL$">
+          <ScalarProperty Name="SESSION_" ColumnName="SESSION#" />
+          <ScalarProperty Name="XIDUSN" ColumnName="XIDUSN" />
+          <ScalarProperty Name="XIDSLT" ColumnName="XIDSLT" />
+          <ScalarProperty Name="XIDSQN" ColumnName="XIDSQN" />
+          <ScalarProperty Name="CHUNK" ColumnName="CHUNK" />
+          <ScalarProperty Name="SEQUENCE_" ColumnName="SEQUENCE#" />
+          <ScalarProperty Name="OFFSET" ColumnName="OFFSET" />
+          <ScalarProperty Name="SPILL_DATA" ColumnName="SPILL_DATA" />
+          <ScalarProperty Name="SPARE1" ColumnName="SPARE1" />
+          <ScalarProperty Name="SPARE2" ColumnName="SPARE2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_ATTRCOL_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_ATTRCOL_">
+        <MappingFragment StoreEntitySet="LOGMNR_ATTRCOL$">
+          <ScalarProperty Name="INTCOL_" ColumnName="INTCOL#" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="OBJ_" ColumnName="OBJ#" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_ATTRIBUTE_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_ATTRIBUTE_">
+        <MappingFragment StoreEntitySet="LOGMNR_ATTRIBUTE$">
+          <ScalarProperty Name="VERSION_" ColumnName="VERSION#" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="ATTRIBUTE_" ColumnName="ATTRIBUTE#" />
+          <ScalarProperty Name="ATTR_TOID" ColumnName="ATTR_TOID" />
+          <ScalarProperty Name="ATTR_VERSION_" ColumnName="ATTR_VERSION#" />
+          <ScalarProperty Name="SYNOBJ_" ColumnName="SYNOBJ#" />
+          <ScalarProperty Name="PROPERTIES" ColumnName="PROPERTIES" />
+          <ScalarProperty Name="CHARSETID" ColumnName="CHARSETID" />
+          <ScalarProperty Name="CHARSETFORM" ColumnName="CHARSETFORM" />
+          <ScalarProperty Name="LENGTH" ColumnName="LENGTH" />
+          <ScalarProperty Name="PRECISION_" ColumnName="PRECISION#" />
+          <ScalarProperty Name="SCALE" ColumnName="SCALE" />
+          <ScalarProperty Name="EXTERNNAME" ColumnName="EXTERNNAME" />
+          <ScalarProperty Name="XFLAGS" ColumnName="XFLAGS" />
+          <ScalarProperty Name="SPARE1" ColumnName="SPARE1" />
+          <ScalarProperty Name="SPARE2" ColumnName="SPARE2" />
+          <ScalarProperty Name="SPARE3" ColumnName="SPARE3" />
+          <ScalarProperty Name="SPARE4" ColumnName="SPARE4" />
+          <ScalarProperty Name="SPARE5" ColumnName="SPARE5" />
+          <ScalarProperty Name="SETTER" ColumnName="SETTER" />
+          <ScalarProperty Name="GETTER" ColumnName="GETTER" />
+          <ScalarProperty Name="TOID" ColumnName="TOID" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_CCOL_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_CCOL_">
+        <MappingFragment StoreEntitySet="LOGMNR_CCOL$">
+          <ScalarProperty Name="CON_" ColumnName="CON#" />
+          <ScalarProperty Name="OBJ_" ColumnName="OBJ#" />
+          <ScalarProperty Name="COL_" ColumnName="COL#" />
+          <ScalarProperty Name="POS_" ColumnName="POS#" />
+          <ScalarProperty Name="INTCOL_" ColumnName="INTCOL#" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_CDEF_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_CDEF_">
+        <MappingFragment StoreEntitySet="LOGMNR_CDEF$">
+          <ScalarProperty Name="CON_" ColumnName="CON#" />
+          <ScalarProperty Name="COLS" ColumnName="COLS" />
+          <ScalarProperty Name="TYPE_" ColumnName="TYPE#" />
+          <ScalarProperty Name="ROBJ_" ColumnName="ROBJ#" />
+          <ScalarProperty Name="RCON_" ColumnName="RCON#" />
+          <ScalarProperty Name="ENABLED" ColumnName="ENABLED" />
+          <ScalarProperty Name="DEFER" ColumnName="DEFER" />
+          <ScalarProperty Name="OBJ_" ColumnName="OBJ#" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_COL_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_COL_">
+        <MappingFragment StoreEntitySet="LOGMNR_COL$">
+          <ScalarProperty Name="COL_" ColumnName="COL#" />
+          <ScalarProperty Name="SEGCOL_" ColumnName="SEGCOL#" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="TYPE_" ColumnName="TYPE#" />
+          <ScalarProperty Name="LENGTH" ColumnName="LENGTH" />
+          <ScalarProperty Name="PRECISION_" ColumnName="PRECISION#" />
+          <ScalarProperty Name="SCALE" ColumnName="SCALE" />
+          <ScalarProperty Name="NULL_" ColumnName="NULL$" />
+          <ScalarProperty Name="INTCOL_" ColumnName="INTCOL#" />
+          <ScalarProperty Name="PROPERTY" ColumnName="PROPERTY" />
+          <ScalarProperty Name="CHARSETID" ColumnName="CHARSETID" />
+          <ScalarProperty Name="CHARSETFORM" ColumnName="CHARSETFORM" />
+          <ScalarProperty Name="SPARE1" ColumnName="SPARE1" />
+          <ScalarProperty Name="SPARE2" ColumnName="SPARE2" />
+          <ScalarProperty Name="OBJ_" ColumnName="OBJ#" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_COLTYPE_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_COLTYPE_">
+        <MappingFragment StoreEntitySet="LOGMNR_COLTYPE$">
+          <ScalarProperty Name="COL_" ColumnName="COL#" />
+          <ScalarProperty Name="INTCOL_" ColumnName="INTCOL#" />
+          <ScalarProperty Name="TOID" ColumnName="TOID" />
+          <ScalarProperty Name="VERSION_" ColumnName="VERSION#" />
+          <ScalarProperty Name="PACKED" ColumnName="PACKED" />
+          <ScalarProperty Name="INTCOLS" ColumnName="INTCOLS" />
+          <ScalarProperty Name="INTCOL_S" ColumnName="INTCOL#S" />
+          <ScalarProperty Name="FLAGS" ColumnName="FLAGS" />
+          <ScalarProperty Name="TYPIDCOL_" ColumnName="TYPIDCOL#" />
+          <ScalarProperty Name="SYNOBJ_" ColumnName="SYNOBJ#" />
+          <ScalarProperty Name="OBJ_" ColumnName="OBJ#" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_DICTIONARY_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_DICTIONARY_">
+        <MappingFragment StoreEntitySet="LOGMNR_DICTIONARY$">
+          <ScalarProperty Name="DB_NAME" ColumnName="DB_NAME" />
+          <ScalarProperty Name="DB_ID" ColumnName="DB_ID" />
+          <ScalarProperty Name="DB_CREATED" ColumnName="DB_CREATED" />
+          <ScalarProperty Name="DB_DICT_CREATED" ColumnName="DB_DICT_CREATED" />
+          <ScalarProperty Name="DB_DICT_SCN" ColumnName="DB_DICT_SCN" />
+          <ScalarProperty Name="DB_THREAD_MAP" ColumnName="DB_THREAD_MAP" />
+          <ScalarProperty Name="DB_TXN_SCNBAS" ColumnName="DB_TXN_SCNBAS" />
+          <ScalarProperty Name="DB_TXN_SCNWRP" ColumnName="DB_TXN_SCNWRP" />
+          <ScalarProperty Name="DB_RESETLOGS_CHANGE_" ColumnName="DB_RESETLOGS_CHANGE#" />
+          <ScalarProperty Name="DB_RESETLOGS_TIME" ColumnName="DB_RESETLOGS_TIME" />
+          <ScalarProperty Name="DB_VERSION_TIME" ColumnName="DB_VERSION_TIME" />
+          <ScalarProperty Name="DB_REDO_TYPE_ID" ColumnName="DB_REDO_TYPE_ID" />
+          <ScalarProperty Name="DB_REDO_RELEASE" ColumnName="DB_REDO_RELEASE" />
+          <ScalarProperty Name="DB_CHARACTER_SET" ColumnName="DB_CHARACTER_SET" />
+          <ScalarProperty Name="DB_VERSION" ColumnName="DB_VERSION" />
+          <ScalarProperty Name="DB_STATUS" ColumnName="DB_STATUS" />
+          <ScalarProperty Name="DB_GLOBAL_NAME" ColumnName="DB_GLOBAL_NAME" />
+          <ScalarProperty Name="DB_DICT_MAXOBJECTS" ColumnName="DB_DICT_MAXOBJECTS" />
+          <ScalarProperty Name="DB_DICT_OBJECTCOUNT" ColumnName="DB_DICT_OBJECTCOUNT" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_DICTSTATE_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_DICTSTATE_">
+        <MappingFragment StoreEntitySet="LOGMNR_DICTSTATE$">
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="START_SCNBAS" ColumnName="START_SCNBAS" />
+          <ScalarProperty Name="START_SCNWRP" ColumnName="START_SCNWRP" />
+          <ScalarProperty Name="END_SCNBAS" ColumnName="END_SCNBAS" />
+          <ScalarProperty Name="END_SCNWRP" ColumnName="END_SCNWRP" />
+          <ScalarProperty Name="REDO_THREAD" ColumnName="REDO_THREAD" />
+          <ScalarProperty Name="RBASQN" ColumnName="RBASQN" />
+          <ScalarProperty Name="RBABLK" ColumnName="RBABLK" />
+          <ScalarProperty Name="RBABYTE" ColumnName="RBABYTE" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_ENC_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_ENC_">
+        <MappingFragment StoreEntitySet="LOGMNR_ENC$">
+          <ScalarProperty Name="OBJ_" ColumnName="OBJ#" />
+          <ScalarProperty Name="OWNER_" ColumnName="OWNER#" />
+          <ScalarProperty Name="ENCALG" ColumnName="ENCALG" />
+          <ScalarProperty Name="INTALG" ColumnName="INTALG" />
+          <ScalarProperty Name="COLKLC" ColumnName="COLKLC" />
+          <ScalarProperty Name="KLCLEN" ColumnName="KLCLEN" />
+          <ScalarProperty Name="FLAG" ColumnName="FLAG" />
+          <ScalarProperty Name="MKEYID" ColumnName="MKEYID" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_ICOL_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_ICOL_">
+        <MappingFragment StoreEntitySet="LOGMNR_ICOL$">
+          <ScalarProperty Name="OBJ_" ColumnName="OBJ#" />
+          <ScalarProperty Name="BO_" ColumnName="BO#" />
+          <ScalarProperty Name="COL_" ColumnName="COL#" />
+          <ScalarProperty Name="POS_" ColumnName="POS#" />
+          <ScalarProperty Name="SEGCOL_" ColumnName="SEGCOL#" />
+          <ScalarProperty Name="INTCOL_" ColumnName="INTCOL#" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_IND_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_IND_">
+        <MappingFragment StoreEntitySet="LOGMNR_IND$">
+          <ScalarProperty Name="BO_" ColumnName="BO#" />
+          <ScalarProperty Name="COLS" ColumnName="COLS" />
+          <ScalarProperty Name="TYPE_" ColumnName="TYPE#" />
+          <ScalarProperty Name="FLAGS" ColumnName="FLAGS" />
+          <ScalarProperty Name="PROPERTY" ColumnName="PROPERTY" />
+          <ScalarProperty Name="OBJ_" ColumnName="OBJ#" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_INDCOMPART_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_INDCOMPART_">
+        <MappingFragment StoreEntitySet="LOGMNR_INDCOMPART$">
+          <ScalarProperty Name="OBJ_" ColumnName="OBJ#" />
+          <ScalarProperty Name="DATAOBJ_" ColumnName="DATAOBJ#" />
+          <ScalarProperty Name="BO_" ColumnName="BO#" />
+          <ScalarProperty Name="PART_" ColumnName="PART#" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_INDPART_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_INDPART_">
+        <MappingFragment StoreEntitySet="LOGMNR_INDPART$">
+          <ScalarProperty Name="OBJ_" ColumnName="OBJ#" />
+          <ScalarProperty Name="BO_" ColumnName="BO#" />
+          <ScalarProperty Name="PART_" ColumnName="PART#" />
+          <ScalarProperty Name="TS_" ColumnName="TS#" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_INDSUBPART_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_INDSUBPART_">
+        <MappingFragment StoreEntitySet="LOGMNR_INDSUBPART$">
+          <ScalarProperty Name="OBJ_" ColumnName="OBJ#" />
+          <ScalarProperty Name="DATAOBJ_" ColumnName="DATAOBJ#" />
+          <ScalarProperty Name="POBJ_" ColumnName="POBJ#" />
+          <ScalarProperty Name="SUBPART_" ColumnName="SUBPART#" />
+          <ScalarProperty Name="TS_" ColumnName="TS#" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_KOPM_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_KOPM_">
+        <MappingFragment StoreEntitySet="LOGMNR_KOPM$">
+          <ScalarProperty Name="LENGTH" ColumnName="LENGTH" />
+          <ScalarProperty Name="METADATA" ColumnName="METADATA" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_LOB_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_LOB_">
+        <MappingFragment StoreEntitySet="LOGMNR_LOB$">
+          <ScalarProperty Name="OBJ_" ColumnName="OBJ#" />
+          <ScalarProperty Name="INTCOL_" ColumnName="INTCOL#" />
+          <ScalarProperty Name="COL_" ColumnName="COL#" />
+          <ScalarProperty Name="LOBJ_" ColumnName="LOBJ#" />
+          <ScalarProperty Name="CHUNK" ColumnName="CHUNK" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_LOBFRAG_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_LOBFRAG_">
+        <MappingFragment StoreEntitySet="LOGMNR_LOBFRAG$">
+          <ScalarProperty Name="FRAGOBJ_" ColumnName="FRAGOBJ#" />
+          <ScalarProperty Name="PARENTOBJ_" ColumnName="PARENTOBJ#" />
+          <ScalarProperty Name="TABFRAGOBJ_" ColumnName="TABFRAGOBJ#" />
+          <ScalarProperty Name="INDFRAGOBJ_" ColumnName="INDFRAGOBJ#" />
+          <ScalarProperty Name="FRAG_" ColumnName="FRAG#" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_LOG_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_LOG_">
+        <MappingFragment StoreEntitySet="LOGMNR_LOG$">
+          <ScalarProperty Name="SESSION_" ColumnName="SESSION#" />
+          <ScalarProperty Name="THREAD_" ColumnName="THREAD#" />
+          <ScalarProperty Name="SEQUENCE_" ColumnName="SEQUENCE#" />
+          <ScalarProperty Name="FIRST_CHANGE_" ColumnName="FIRST_CHANGE#" />
+          <ScalarProperty Name="NEXT_CHANGE_" ColumnName="NEXT_CHANGE#" />
+          <ScalarProperty Name="FIRST_TIME" ColumnName="FIRST_TIME" />
+          <ScalarProperty Name="NEXT_TIME" ColumnName="NEXT_TIME" />
+          <ScalarProperty Name="FILE_NAME" ColumnName="FILE_NAME" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="INFO" ColumnName="INFO" />
+          <ScalarProperty Name="TIMESTAMP" ColumnName="TIMESTAMP" />
+          <ScalarProperty Name="DICT_BEGIN" ColumnName="DICT_BEGIN" />
+          <ScalarProperty Name="DICT_END" ColumnName="DICT_END" />
+          <ScalarProperty Name="STATUS_INFO" ColumnName="STATUS_INFO" />
+          <ScalarProperty Name="DB_ID" ColumnName="DB_ID" />
+          <ScalarProperty Name="RESETLOGS_CHANGE_" ColumnName="RESETLOGS_CHANGE#" />
+          <ScalarProperty Name="RESET_TIMESTAMP" ColumnName="RESET_TIMESTAMP" />
+          <ScalarProperty Name="PREV_RESETLOGS_CHANGE_" ColumnName="PREV_RESETLOGS_CHANGE#" />
+          <ScalarProperty Name="PREV_RESET_TIMESTAMP" ColumnName="PREV_RESET_TIMESTAMP" />
+          <ScalarProperty Name="BLOCKS" ColumnName="BLOCKS" />
+          <ScalarProperty Name="BLOCK_SIZE" ColumnName="BLOCK_SIZE" />
+          <ScalarProperty Name="FLAGS" ColumnName="FLAGS" />
+          <ScalarProperty Name="CONTENTS" ColumnName="CONTENTS" />
+          <ScalarProperty Name="RECID" ColumnName="RECID" />
+          <ScalarProperty Name="RECSTAMP" ColumnName="RECSTAMP" />
+          <ScalarProperty Name="MARK_DELETE_TIMESTAMP" ColumnName="MARK_DELETE_TIMESTAMP" />
+          <ScalarProperty Name="SPARE1" ColumnName="SPARE1" />
+          <ScalarProperty Name="SPARE2" ColumnName="SPARE2" />
+          <ScalarProperty Name="SPARE3" ColumnName="SPARE3" />
+          <ScalarProperty Name="SPARE4" ColumnName="SPARE4" />
+          <ScalarProperty Name="SPARE5" ColumnName="SPARE5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_LOGMNR_BUILDLOG">
+      <EntityTypeMapping TypeName="Model.LOGMNR_LOGMNR_BUILDLOG">
+        <MappingFragment StoreEntitySet="LOGMNR_LOGMNR_BUILDLOG">
+          <ScalarProperty Name="BUILD_DATE" ColumnName="BUILD_DATE" />
+          <ScalarProperty Name="DB_TXN_SCNBAS" ColumnName="DB_TXN_SCNBAS" />
+          <ScalarProperty Name="DB_TXN_SCNWRP" ColumnName="DB_TXN_SCNWRP" />
+          <ScalarProperty Name="CURRENT_BUILD_STATE" ColumnName="CURRENT_BUILD_STATE" />
+          <ScalarProperty Name="COMPLETION_STATUS" ColumnName="COMPLETION_STATUS" />
+          <ScalarProperty Name="MARKED_LOG_FILE_LOW_SCN" ColumnName="MARKED_LOG_FILE_LOW_SCN" />
+          <ScalarProperty Name="INITIAL_XID" ColumnName="INITIAL_XID" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_NTAB_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_NTAB_">
+        <MappingFragment StoreEntitySet="LOGMNR_NTAB$">
+          <ScalarProperty Name="COL_" ColumnName="COL#" />
+          <ScalarProperty Name="INTCOL_" ColumnName="INTCOL#" />
+          <ScalarProperty Name="NTAB_" ColumnName="NTAB#" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="OBJ_" ColumnName="OBJ#" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_OBJ_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_OBJ_">
+        <MappingFragment StoreEntitySet="LOGMNR_OBJ$">
+          <ScalarProperty Name="OBJV_" ColumnName="OBJV#" />
+          <ScalarProperty Name="OWNER_" ColumnName="OWNER#" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="NAMESPACE" ColumnName="NAMESPACE" />
+          <ScalarProperty Name="SUBNAME" ColumnName="SUBNAME" />
+          <ScalarProperty Name="TYPE_" ColumnName="TYPE#" />
+          <ScalarProperty Name="OID_" ColumnName="OID$" />
+          <ScalarProperty Name="REMOTEOWNER" ColumnName="REMOTEOWNER" />
+          <ScalarProperty Name="LINKNAME" ColumnName="LINKNAME" />
+          <ScalarProperty Name="FLAGS" ColumnName="FLAGS" />
+          <ScalarProperty Name="SPARE3" ColumnName="SPARE3" />
+          <ScalarProperty Name="STIME" ColumnName="STIME" />
+          <ScalarProperty Name="OBJ_" ColumnName="OBJ#" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+          <ScalarProperty Name="START_SCNBAS" ColumnName="START_SCNBAS" />
+          <ScalarProperty Name="START_SCNWRP" ColumnName="START_SCNWRP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_OPQTYPE_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_OPQTYPE_">
+        <MappingFragment StoreEntitySet="LOGMNR_OPQTYPE$">
+          <ScalarProperty Name="INTCOL_" ColumnName="INTCOL#" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="FLAGS" ColumnName="FLAGS" />
+          <ScalarProperty Name="LOBCOL" ColumnName="LOBCOL" />
+          <ScalarProperty Name="OBJCOL" ColumnName="OBJCOL" />
+          <ScalarProperty Name="EXTRACOL" ColumnName="EXTRACOL" />
+          <ScalarProperty Name="SCHEMAOID" ColumnName="SCHEMAOID" />
+          <ScalarProperty Name="ELEMNUM" ColumnName="ELEMNUM" />
+          <ScalarProperty Name="SCHEMAURL" ColumnName="SCHEMAURL" />
+          <ScalarProperty Name="OBJ_" ColumnName="OBJ#" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_PARTOBJ_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_PARTOBJ_">
+        <MappingFragment StoreEntitySet="LOGMNR_PARTOBJ$">
+          <ScalarProperty Name="PARTTYPE" ColumnName="PARTTYPE" />
+          <ScalarProperty Name="PARTCNT" ColumnName="PARTCNT" />
+          <ScalarProperty Name="PARTKEYCOLS" ColumnName="PARTKEYCOLS" />
+          <ScalarProperty Name="FLAGS" ColumnName="FLAGS" />
+          <ScalarProperty Name="DEFTS_" ColumnName="DEFTS#" />
+          <ScalarProperty Name="DEFPCTFREE" ColumnName="DEFPCTFREE" />
+          <ScalarProperty Name="DEFPCTUSED" ColumnName="DEFPCTUSED" />
+          <ScalarProperty Name="DEFPCTTHRES" ColumnName="DEFPCTTHRES" />
+          <ScalarProperty Name="DEFINITRANS" ColumnName="DEFINITRANS" />
+          <ScalarProperty Name="DEFMAXTRANS" ColumnName="DEFMAXTRANS" />
+          <ScalarProperty Name="DEFTINIEXTS" ColumnName="DEFTINIEXTS" />
+          <ScalarProperty Name="DEFEXTSIZE" ColumnName="DEFEXTSIZE" />
+          <ScalarProperty Name="DEFMINEXTS" ColumnName="DEFMINEXTS" />
+          <ScalarProperty Name="DEFMAXEXTS" ColumnName="DEFMAXEXTS" />
+          <ScalarProperty Name="DEFEXTPCT" ColumnName="DEFEXTPCT" />
+          <ScalarProperty Name="DEFLISTS" ColumnName="DEFLISTS" />
+          <ScalarProperty Name="DEFGROUPS" ColumnName="DEFGROUPS" />
+          <ScalarProperty Name="DEFLOGGING" ColumnName="DEFLOGGING" />
+          <ScalarProperty Name="SPARE1" ColumnName="SPARE1" />
+          <ScalarProperty Name="SPARE2" ColumnName="SPARE2" />
+          <ScalarProperty Name="SPARE3" ColumnName="SPARE3" />
+          <ScalarProperty Name="DEFINCLCOL" ColumnName="DEFINCLCOL" />
+          <ScalarProperty Name="PARAMETERS" ColumnName="PARAMETERS" />
+          <ScalarProperty Name="OBJ_" ColumnName="OBJ#" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_PROCESSED_LOG_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_PROCESSED_LOG_">
+        <MappingFragment StoreEntitySet="LOGMNR_PROCESSED_LOG$">
+          <ScalarProperty Name="SESSION_" ColumnName="SESSION#" />
+          <ScalarProperty Name="THREAD_" ColumnName="THREAD#" />
+          <ScalarProperty Name="SEQUENCE_" ColumnName="SEQUENCE#" />
+          <ScalarProperty Name="FIRST_CHANGE_" ColumnName="FIRST_CHANGE#" />
+          <ScalarProperty Name="NEXT_CHANGE_" ColumnName="NEXT_CHANGE#" />
+          <ScalarProperty Name="FIRST_TIME" ColumnName="FIRST_TIME" />
+          <ScalarProperty Name="NEXT_TIME" ColumnName="NEXT_TIME" />
+          <ScalarProperty Name="FILE_NAME" ColumnName="FILE_NAME" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="INFO" ColumnName="INFO" />
+          <ScalarProperty Name="TIMESTAMP" ColumnName="TIMESTAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_PROPS_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_PROPS_">
+        <MappingFragment StoreEntitySet="LOGMNR_PROPS$">
+          <ScalarProperty Name="VALUE_" ColumnName="VALUE$" />
+          <ScalarProperty Name="COMMENT_" ColumnName="COMMENT$" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_REFCON_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_REFCON_">
+        <MappingFragment StoreEntitySet="LOGMNR_REFCON$">
+          <ScalarProperty Name="COL_" ColumnName="COL#" />
+          <ScalarProperty Name="INTCOL_" ColumnName="INTCOL#" />
+          <ScalarProperty Name="REFTYP" ColumnName="REFTYP" />
+          <ScalarProperty Name="STABID" ColumnName="STABID" />
+          <ScalarProperty Name="EXPCTOID" ColumnName="EXPCTOID" />
+          <ScalarProperty Name="OBJ_" ColumnName="OBJ#" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_RESTART_CKPT_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_RESTART_CKPT_">
+        <MappingFragment StoreEntitySet="LOGMNR_RESTART_CKPT$">
+          <ScalarProperty Name="SESSION_" ColumnName="SESSION#" />
+          <ScalarProperty Name="VALID" ColumnName="VALID" />
+          <ScalarProperty Name="CKPT_SCN" ColumnName="CKPT_SCN" />
+          <ScalarProperty Name="XIDUSN" ColumnName="XIDUSN" />
+          <ScalarProperty Name="XIDSLT" ColumnName="XIDSLT" />
+          <ScalarProperty Name="XIDSQN" ColumnName="XIDSQN" />
+          <ScalarProperty Name="SESSION_NUM" ColumnName="SESSION_NUM" />
+          <ScalarProperty Name="SERIAL_NUM" ColumnName="SERIAL_NUM" />
+          <ScalarProperty Name="CKPT_INFO" ColumnName="CKPT_INFO" />
+          <ScalarProperty Name="FLAG" ColumnName="FLAG" />
+          <ScalarProperty Name="OFFSET" ColumnName="OFFSET" />
+          <ScalarProperty Name="CLIENT_DATA" ColumnName="CLIENT_DATA" />
+          <ScalarProperty Name="SPARE1" ColumnName="SPARE1" />
+          <ScalarProperty Name="SPARE2" ColumnName="SPARE2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_RESTART_CKPT_TXINFO_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_RESTART_CKPT_TXINFO_">
+        <MappingFragment StoreEntitySet="LOGMNR_RESTART_CKPT_TXINFO$">
+          <ScalarProperty Name="SESSION_" ColumnName="SESSION#" />
+          <ScalarProperty Name="XIDUSN" ColumnName="XIDUSN" />
+          <ScalarProperty Name="XIDSLT" ColumnName="XIDSLT" />
+          <ScalarProperty Name="XIDSQN" ColumnName="XIDSQN" />
+          <ScalarProperty Name="SESSION_NUM" ColumnName="SESSION_NUM" />
+          <ScalarProperty Name="SERIAL_NUM" ColumnName="SERIAL_NUM" />
+          <ScalarProperty Name="FLAG" ColumnName="FLAG" />
+          <ScalarProperty Name="START_SCN" ColumnName="START_SCN" />
+          <ScalarProperty Name="EFFECTIVE_SCN" ColumnName="EFFECTIVE_SCN" />
+          <ScalarProperty Name="OFFSET" ColumnName="OFFSET" />
+          <ScalarProperty Name="TX_DATA" ColumnName="TX_DATA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_SEED_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_SEED_">
+        <MappingFragment StoreEntitySet="LOGMNR_SEED$">
+          <ScalarProperty Name="SEED_VERSION" ColumnName="SEED_VERSION" />
+          <ScalarProperty Name="GATHER_VERSION" ColumnName="GATHER_VERSION" />
+          <ScalarProperty Name="SCHEMANAME" ColumnName="SCHEMANAME" />
+          <ScalarProperty Name="OBJ_" ColumnName="OBJ#" />
+          <ScalarProperty Name="OBJV_" ColumnName="OBJV#" />
+          <ScalarProperty Name="TABLE_NAME" ColumnName="TABLE_NAME" />
+          <ScalarProperty Name="COL_NAME" ColumnName="COL_NAME" />
+          <ScalarProperty Name="COL_" ColumnName="COL#" />
+          <ScalarProperty Name="INTCOL_" ColumnName="INTCOL#" />
+          <ScalarProperty Name="SEGCOL_" ColumnName="SEGCOL#" />
+          <ScalarProperty Name="TYPE_" ColumnName="TYPE#" />
+          <ScalarProperty Name="LENGTH" ColumnName="LENGTH" />
+          <ScalarProperty Name="PRECISION_" ColumnName="PRECISION#" />
+          <ScalarProperty Name="SCALE" ColumnName="SCALE" />
+          <ScalarProperty Name="NULL_" ColumnName="NULL$" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_SESSION_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_SESSION_">
+        <MappingFragment StoreEntitySet="LOGMNR_SESSION$">
+          <ScalarProperty Name="SESSION_" ColumnName="SESSION#" />
+          <ScalarProperty Name="CLIENT_" ColumnName="CLIENT#" />
+          <ScalarProperty Name="SESSION_NAME" ColumnName="SESSION_NAME" />
+          <ScalarProperty Name="DB_ID" ColumnName="DB_ID" />
+          <ScalarProperty Name="RESETLOGS_CHANGE_" ColumnName="RESETLOGS_CHANGE#" />
+          <ScalarProperty Name="SESSION_ATTR" ColumnName="SESSION_ATTR" />
+          <ScalarProperty Name="SESSION_ATTR_VERBOSE" ColumnName="SESSION_ATTR_VERBOSE" />
+          <ScalarProperty Name="START_SCN" ColumnName="START_SCN" />
+          <ScalarProperty Name="END_SCN" ColumnName="END_SCN" />
+          <ScalarProperty Name="SPILL_SCN" ColumnName="SPILL_SCN" />
+          <ScalarProperty Name="SPILL_TIME" ColumnName="SPILL_TIME" />
+          <ScalarProperty Name="OLDEST_SCN" ColumnName="OLDEST_SCN" />
+          <ScalarProperty Name="RESUME_SCN" ColumnName="RESUME_SCN" />
+          <ScalarProperty Name="GLOBAL_DB_NAME" ColumnName="GLOBAL_DB_NAME" />
+          <ScalarProperty Name="RESET_TIMESTAMP" ColumnName="RESET_TIMESTAMP" />
+          <ScalarProperty Name="BRANCH_SCN" ColumnName="BRANCH_SCN" />
+          <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+          <ScalarProperty Name="REDO_COMPAT" ColumnName="REDO_COMPAT" />
+          <ScalarProperty Name="SPARE1" ColumnName="SPARE1" />
+          <ScalarProperty Name="SPARE2" ColumnName="SPARE2" />
+          <ScalarProperty Name="SPARE3" ColumnName="SPARE3" />
+          <ScalarProperty Name="SPARE4" ColumnName="SPARE4" />
+          <ScalarProperty Name="SPARE5" ColumnName="SPARE5" />
+          <ScalarProperty Name="SPARE6" ColumnName="SPARE6" />
+          <ScalarProperty Name="SPARE7" ColumnName="SPARE7" />
+          <ScalarProperty Name="SPARE8" ColumnName="SPARE8" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_SESSION_ACTIONS_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_SESSION_ACTIONS_">
+        <MappingFragment StoreEntitySet="LOGMNR_SESSION_ACTIONS$">
+          <ScalarProperty Name="FLAGSRUNTIME" ColumnName="FLAGSRUNTIME" />
+          <ScalarProperty Name="DROPSCN" ColumnName="DROPSCN" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="DISPATCHTIME" ColumnName="DISPATCHTIME" />
+          <ScalarProperty Name="DROPTIME" ColumnName="DROPTIME" />
+          <ScalarProperty Name="LCRCOUNT" ColumnName="LCRCOUNT" />
+          <ScalarProperty Name="ACTIONNAME" ColumnName="ACTIONNAME" />
+          <ScalarProperty Name="LOGMNRSESSION_" ColumnName="LOGMNRSESSION#" />
+          <ScalarProperty Name="PROCESSROLE_" ColumnName="PROCESSROLE#" />
+          <ScalarProperty Name="ACTIONTYPE_" ColumnName="ACTIONTYPE#" />
+          <ScalarProperty Name="FLAGSDEFINETIME" ColumnName="FLAGSDEFINETIME" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="XIDUSN" ColumnName="XIDUSN" />
+          <ScalarProperty Name="XIDSLT" ColumnName="XIDSLT" />
+          <ScalarProperty Name="XIDSQN" ColumnName="XIDSQN" />
+          <ScalarProperty Name="THREAD_" ColumnName="THREAD#" />
+          <ScalarProperty Name="STARTSCN" ColumnName="STARTSCN" />
+          <ScalarProperty Name="STARTSUBSCN" ColumnName="STARTSUBSCN" />
+          <ScalarProperty Name="ENDSCN" ColumnName="ENDSCN" />
+          <ScalarProperty Name="ENDSUBSCN" ColumnName="ENDSUBSCN" />
+          <ScalarProperty Name="RBASQN" ColumnName="RBASQN" />
+          <ScalarProperty Name="RBABLK" ColumnName="RBABLK" />
+          <ScalarProperty Name="RBABYTE" ColumnName="RBABYTE" />
+          <ScalarProperty Name="SESSION_" ColumnName="SESSION#" />
+          <ScalarProperty Name="OBJ_" ColumnName="OBJ#" />
+          <ScalarProperty Name="ATTR1" ColumnName="ATTR1" />
+          <ScalarProperty Name="ATTR2" ColumnName="ATTR2" />
+          <ScalarProperty Name="ATTR3" ColumnName="ATTR3" />
+          <ScalarProperty Name="SPARE1" ColumnName="SPARE1" />
+          <ScalarProperty Name="SPARE2" ColumnName="SPARE2" />
+          <ScalarProperty Name="SPARE3" ColumnName="SPARE3" />
+          <ScalarProperty Name="SPARE4" ColumnName="SPARE4" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_SESSION_EVOLVE_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_SESSION_EVOLVE_">
+        <MappingFragment StoreEntitySet="LOGMNR_SESSION_EVOLVE$">
+          <ScalarProperty Name="BRANCH_LEVEL" ColumnName="BRANCH_LEVEL" />
+          <ScalarProperty Name="SESSION_" ColumnName="SESSION#" />
+          <ScalarProperty Name="DB_ID" ColumnName="DB_ID" />
+          <ScalarProperty Name="RESET_SCN" ColumnName="RESET_SCN" />
+          <ScalarProperty Name="RESET_TIMESTAMP" ColumnName="RESET_TIMESTAMP" />
+          <ScalarProperty Name="PREV_RESET_SCN" ColumnName="PREV_RESET_SCN" />
+          <ScalarProperty Name="PREV_RESET_TIMESTAMP" ColumnName="PREV_RESET_TIMESTAMP" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="SPARE1" ColumnName="SPARE1" />
+          <ScalarProperty Name="SPARE2" ColumnName="SPARE2" />
+          <ScalarProperty Name="SPARE3" ColumnName="SPARE3" />
+          <ScalarProperty Name="SPARE4" ColumnName="SPARE4" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_SPILL_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_SPILL_">
+        <MappingFragment StoreEntitySet="LOGMNR_SPILL$">
+          <ScalarProperty Name="SESSION_" ColumnName="SESSION#" />
+          <ScalarProperty Name="XIDUSN" ColumnName="XIDUSN" />
+          <ScalarProperty Name="XIDSLT" ColumnName="XIDSLT" />
+          <ScalarProperty Name="XIDSQN" ColumnName="XIDSQN" />
+          <ScalarProperty Name="CHUNK" ColumnName="CHUNK" />
+          <ScalarProperty Name="STARTIDX" ColumnName="STARTIDX" />
+          <ScalarProperty Name="ENDIDX" ColumnName="ENDIDX" />
+          <ScalarProperty Name="FLAG" ColumnName="FLAG" />
+          <ScalarProperty Name="SEQUENCE_" ColumnName="SEQUENCE#" />
+          <ScalarProperty Name="SPILL_DATA" ColumnName="SPILL_DATA" />
+          <ScalarProperty Name="SPARE1" ColumnName="SPARE1" />
+          <ScalarProperty Name="SPARE2" ColumnName="SPARE2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_SUBCOLTYPE_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_SUBCOLTYPE_">
+        <MappingFragment StoreEntitySet="LOGMNR_SUBCOLTYPE$">
+          <ScalarProperty Name="INTCOL_" ColumnName="INTCOL#" />
+          <ScalarProperty Name="TOID" ColumnName="TOID" />
+          <ScalarProperty Name="VERSION_" ColumnName="VERSION#" />
+          <ScalarProperty Name="INTCOLS" ColumnName="INTCOLS" />
+          <ScalarProperty Name="INTCOL_S" ColumnName="INTCOL#S" />
+          <ScalarProperty Name="FLAGS" ColumnName="FLAGS" />
+          <ScalarProperty Name="SYNOBJ_" ColumnName="SYNOBJ#" />
+          <ScalarProperty Name="OBJ_" ColumnName="OBJ#" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_TAB_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_TAB_">
+        <MappingFragment StoreEntitySet="LOGMNR_TAB$">
+          <ScalarProperty Name="TS_" ColumnName="TS#" />
+          <ScalarProperty Name="COLS" ColumnName="COLS" />
+          <ScalarProperty Name="PROPERTY" ColumnName="PROPERTY" />
+          <ScalarProperty Name="INTCOLS" ColumnName="INTCOLS" />
+          <ScalarProperty Name="KERNELCOLS" ColumnName="KERNELCOLS" />
+          <ScalarProperty Name="BOBJ_" ColumnName="BOBJ#" />
+          <ScalarProperty Name="TRIGFLAG" ColumnName="TRIGFLAG" />
+          <ScalarProperty Name="FLAGS" ColumnName="FLAGS" />
+          <ScalarProperty Name="OBJ_" ColumnName="OBJ#" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_TABCOMPART_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_TABCOMPART_">
+        <MappingFragment StoreEntitySet="LOGMNR_TABCOMPART$">
+          <ScalarProperty Name="OBJ_" ColumnName="OBJ#" />
+          <ScalarProperty Name="BO_" ColumnName="BO#" />
+          <ScalarProperty Name="PART_" ColumnName="PART#" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_TABPART_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_TABPART_">
+        <MappingFragment StoreEntitySet="LOGMNR_TABPART$">
+          <ScalarProperty Name="OBJ_" ColumnName="OBJ#" />
+          <ScalarProperty Name="TS_" ColumnName="TS#" />
+          <ScalarProperty Name="PART_" ColumnName="PART#" />
+          <ScalarProperty Name="BO_" ColumnName="BO#" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_TABSUBPART_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_TABSUBPART_">
+        <MappingFragment StoreEntitySet="LOGMNR_TABSUBPART$">
+          <ScalarProperty Name="OBJ_" ColumnName="OBJ#" />
+          <ScalarProperty Name="DATAOBJ_" ColumnName="DATAOBJ#" />
+          <ScalarProperty Name="POBJ_" ColumnName="POBJ#" />
+          <ScalarProperty Name="SUBPART_" ColumnName="SUBPART#" />
+          <ScalarProperty Name="TS_" ColumnName="TS#" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_TS_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_TS_">
+        <MappingFragment StoreEntitySet="LOGMNR_TS$">
+          <ScalarProperty Name="TS_" ColumnName="TS#" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="OWNER_" ColumnName="OWNER#" />
+          <ScalarProperty Name="BLOCKSIZE" ColumnName="BLOCKSIZE" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_TYPE_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_TYPE_">
+        <MappingFragment StoreEntitySet="LOGMNR_TYPE$">
+          <ScalarProperty Name="VERSION_" ColumnName="VERSION#" />
+          <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+          <ScalarProperty Name="TVOID" ColumnName="TVOID" />
+          <ScalarProperty Name="TYPECODE" ColumnName="TYPECODE" />
+          <ScalarProperty Name="PROPERTIES" ColumnName="PROPERTIES" />
+          <ScalarProperty Name="ATTRIBUTES" ColumnName="ATTRIBUTES" />
+          <ScalarProperty Name="METHODS" ColumnName="METHODS" />
+          <ScalarProperty Name="HIDDENMETHODS" ColumnName="HIDDENMETHODS" />
+          <ScalarProperty Name="SUPERTYPES" ColumnName="SUPERTYPES" />
+          <ScalarProperty Name="SUBTYPES" ColumnName="SUBTYPES" />
+          <ScalarProperty Name="EXTERNTYPE" ColumnName="EXTERNTYPE" />
+          <ScalarProperty Name="EXTERNNAME" ColumnName="EXTERNNAME" />
+          <ScalarProperty Name="HELPERCLASSNAME" ColumnName="HELPERCLASSNAME" />
+          <ScalarProperty Name="LOCAL_ATTRS" ColumnName="LOCAL_ATTRS" />
+          <ScalarProperty Name="LOCAL_METHODS" ColumnName="LOCAL_METHODS" />
+          <ScalarProperty Name="TYPEID" ColumnName="TYPEID" />
+          <ScalarProperty Name="ROOTTOID" ColumnName="ROOTTOID" />
+          <ScalarProperty Name="SPARE1" ColumnName="SPARE1" />
+          <ScalarProperty Name="SPARE2" ColumnName="SPARE2" />
+          <ScalarProperty Name="SPARE3" ColumnName="SPARE3" />
+          <ScalarProperty Name="SUPERTOID" ColumnName="SUPERTOID" />
+          <ScalarProperty Name="HASHCODE" ColumnName="HASHCODE" />
+          <ScalarProperty Name="TOID" ColumnName="TOID" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_UID_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_UID_">
+        <MappingFragment StoreEntitySet="LOGMNR_UID$">
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="SESSION_" ColumnName="SESSION#" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_USER_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_USER_">
+        <MappingFragment StoreEntitySet="LOGMNR_USER$">
+          <ScalarProperty Name="USER_" ColumnName="USER#" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="LOGMNR_FLAGS" ColumnName="LOGMNR_FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNRC_DBNAME_UID_MAP">
+      <EntityTypeMapping TypeName="Model.LOGMNRC_DBNAME_UID_MAP">
+        <MappingFragment StoreEntitySet="LOGMNRC_DBNAME_UID_MAP">
+          <ScalarProperty Name="GLOBAL_NAME" ColumnName="GLOBAL_NAME" />
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="FLAGS" ColumnName="FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNRC_GSBA">
+      <EntityTypeMapping TypeName="Model.LOGMNRC_GSBA">
+        <MappingFragment StoreEntitySet="LOGMNRC_GSBA">
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="AS_OF_SCN" ColumnName="AS_OF_SCN" />
+          <ScalarProperty Name="FDO_LENGTH" ColumnName="FDO_LENGTH" />
+          <ScalarProperty Name="FDO_VALUE" ColumnName="FDO_VALUE" />
+          <ScalarProperty Name="CHARSETID" ColumnName="CHARSETID" />
+          <ScalarProperty Name="NCHARSETID" ColumnName="NCHARSETID" />
+          <ScalarProperty Name="DBTIMEZONE_LEN" ColumnName="DBTIMEZONE_LEN" />
+          <ScalarProperty Name="DBTIMEZONE_VALUE" ColumnName="DBTIMEZONE_VALUE" />
+          <ScalarProperty Name="LOGMNR_SPARE1" ColumnName="LOGMNR_SPARE1" />
+          <ScalarProperty Name="LOGMNR_SPARE2" ColumnName="LOGMNR_SPARE2" />
+          <ScalarProperty Name="LOGMNR_SPARE3" ColumnName="LOGMNR_SPARE3" />
+          <ScalarProperty Name="LOGMNR_SPARE4" ColumnName="LOGMNR_SPARE4" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNRC_GSII">
+      <EntityTypeMapping TypeName="Model.LOGMNRC_GSII">
+        <MappingFragment StoreEntitySet="LOGMNRC_GSII">
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="OBJ_" ColumnName="OBJ#" />
+          <ScalarProperty Name="BO_" ColumnName="BO#" />
+          <ScalarProperty Name="INDTYPE_" ColumnName="INDTYPE#" />
+          <ScalarProperty Name="DROP_SCN" ColumnName="DROP_SCN" />
+          <ScalarProperty Name="LOGMNR_SPARE1" ColumnName="LOGMNR_SPARE1" />
+          <ScalarProperty Name="LOGMNR_SPARE2" ColumnName="LOGMNR_SPARE2" />
+          <ScalarProperty Name="LOGMNR_SPARE3" ColumnName="LOGMNR_SPARE3" />
+          <ScalarProperty Name="LOGMNR_SPARE4" ColumnName="LOGMNR_SPARE4" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNRC_GTCS">
+      <EntityTypeMapping TypeName="Model.LOGMNRC_GTCS">
+        <MappingFragment StoreEntitySet="LOGMNRC_GTCS">
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="OBJ_" ColumnName="OBJ#" />
+          <ScalarProperty Name="OBJV_" ColumnName="OBJV#" />
+          <ScalarProperty Name="SEGCOL_" ColumnName="SEGCOL#" />
+          <ScalarProperty Name="INTCOL_" ColumnName="INTCOL#" />
+          <ScalarProperty Name="COLNAME" ColumnName="COLNAME" />
+          <ScalarProperty Name="TYPE_" ColumnName="TYPE#" />
+          <ScalarProperty Name="LENGTH" ColumnName="LENGTH" />
+          <ScalarProperty Name="PRECISION" ColumnName="PRECISION" />
+          <ScalarProperty Name="SCALE" ColumnName="SCALE" />
+          <ScalarProperty Name="INTERVAL_LEADING_PRECISION" ColumnName="INTERVAL_LEADING_PRECISION" />
+          <ScalarProperty Name="INTERVAL_TRAILING_PRECISION" ColumnName="INTERVAL_TRAILING_PRECISION" />
+          <ScalarProperty Name="PROPERTY" ColumnName="PROPERTY" />
+          <ScalarProperty Name="TOID" ColumnName="TOID" />
+          <ScalarProperty Name="CHARSETID" ColumnName="CHARSETID" />
+          <ScalarProperty Name="CHARSETFORM" ColumnName="CHARSETFORM" />
+          <ScalarProperty Name="TYPENAME" ColumnName="TYPENAME" />
+          <ScalarProperty Name="FQCOLNAME" ColumnName="FQCOLNAME" />
+          <ScalarProperty Name="NUMINTCOLS" ColumnName="NUMINTCOLS" />
+          <ScalarProperty Name="NUMATTRS" ColumnName="NUMATTRS" />
+          <ScalarProperty Name="ADTORDER" ColumnName="ADTORDER" />
+          <ScalarProperty Name="LOGMNR_SPARE1" ColumnName="LOGMNR_SPARE1" />
+          <ScalarProperty Name="LOGMNR_SPARE2" ColumnName="LOGMNR_SPARE2" />
+          <ScalarProperty Name="LOGMNR_SPARE3" ColumnName="LOGMNR_SPARE3" />
+          <ScalarProperty Name="LOGMNR_SPARE4" ColumnName="LOGMNR_SPARE4" />
+          <ScalarProperty Name="LOGMNR_SPARE5" ColumnName="LOGMNR_SPARE5" />
+          <ScalarProperty Name="LOGMNR_SPARE6" ColumnName="LOGMNR_SPARE6" />
+          <ScalarProperty Name="LOGMNR_SPARE7" ColumnName="LOGMNR_SPARE7" />
+          <ScalarProperty Name="LOGMNR_SPARE8" ColumnName="LOGMNR_SPARE8" />
+          <ScalarProperty Name="LOGMNR_SPARE9" ColumnName="LOGMNR_SPARE9" />
+          <ScalarProperty Name="COL_" ColumnName="COL#" />
+          <ScalarProperty Name="XTYPESCHEMANAME" ColumnName="XTYPESCHEMANAME" />
+          <ScalarProperty Name="XTYPENAME" ColumnName="XTYPENAME" />
+          <ScalarProperty Name="XFQCOLNAME" ColumnName="XFQCOLNAME" />
+          <ScalarProperty Name="XTOPINTCOL" ColumnName="XTOPINTCOL" />
+          <ScalarProperty Name="XREFFEDTABLEOBJN" ColumnName="XREFFEDTABLEOBJN" />
+          <ScalarProperty Name="XREFFEDTABLEOBJV" ColumnName="XREFFEDTABLEOBJV" />
+          <ScalarProperty Name="XCOLTYPEFLAGS" ColumnName="XCOLTYPEFLAGS" />
+          <ScalarProperty Name="XOPQTYPETYPE" ColumnName="XOPQTYPETYPE" />
+          <ScalarProperty Name="XOPQTYPEFLAGS" ColumnName="XOPQTYPEFLAGS" />
+          <ScalarProperty Name="XOPQLOBINTCOL" ColumnName="XOPQLOBINTCOL" />
+          <ScalarProperty Name="XOPQOBJINTCOL" ColumnName="XOPQOBJINTCOL" />
+          <ScalarProperty Name="XXMLINTCOL" ColumnName="XXMLINTCOL" />
+          <ScalarProperty Name="EAOWNER_" ColumnName="EAOWNER#" />
+          <ScalarProperty Name="EAMKEYID" ColumnName="EAMKEYID" />
+          <ScalarProperty Name="EAENCALG" ColumnName="EAENCALG" />
+          <ScalarProperty Name="EAINTALG" ColumnName="EAINTALG" />
+          <ScalarProperty Name="EACOLKLC" ColumnName="EACOLKLC" />
+          <ScalarProperty Name="EAKLCLEN" ColumnName="EAKLCLEN" />
+          <ScalarProperty Name="EAFLAGS" ColumnName="EAFLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNRC_GTLO">
+      <EntityTypeMapping TypeName="Model.LOGMNRC_GTLO">
+        <MappingFragment StoreEntitySet="LOGMNRC_GTLO">
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="KEYOBJ_" ColumnName="KEYOBJ#" />
+          <ScalarProperty Name="LVLCNT" ColumnName="LVLCNT" />
+          <ScalarProperty Name="BASEOBJ_" ColumnName="BASEOBJ#" />
+          <ScalarProperty Name="BASEOBJV_" ColumnName="BASEOBJV#" />
+          <ScalarProperty Name="LVL1OBJ_" ColumnName="LVL1OBJ#" />
+          <ScalarProperty Name="LVL2OBJ_" ColumnName="LVL2OBJ#" />
+          <ScalarProperty Name="LVL0TYPE_" ColumnName="LVL0TYPE#" />
+          <ScalarProperty Name="LVL1TYPE_" ColumnName="LVL1TYPE#" />
+          <ScalarProperty Name="LVL2TYPE_" ColumnName="LVL2TYPE#" />
+          <ScalarProperty Name="OWNER_" ColumnName="OWNER#" />
+          <ScalarProperty Name="OWNERNAME" ColumnName="OWNERNAME" />
+          <ScalarProperty Name="LVL0NAME" ColumnName="LVL0NAME" />
+          <ScalarProperty Name="LVL1NAME" ColumnName="LVL1NAME" />
+          <ScalarProperty Name="LVL2NAME" ColumnName="LVL2NAME" />
+          <ScalarProperty Name="INTCOLS" ColumnName="INTCOLS" />
+          <ScalarProperty Name="COLS" ColumnName="COLS" />
+          <ScalarProperty Name="KERNELCOLS" ColumnName="KERNELCOLS" />
+          <ScalarProperty Name="TAB_FLAGS" ColumnName="TAB_FLAGS" />
+          <ScalarProperty Name="TRIGFLAG" ColumnName="TRIGFLAG" />
+          <ScalarProperty Name="ASSOC_" ColumnName="ASSOC#" />
+          <ScalarProperty Name="OBJ_FLAGS" ColumnName="OBJ_FLAGS" />
+          <ScalarProperty Name="TS_" ColumnName="TS#" />
+          <ScalarProperty Name="TSNAME" ColumnName="TSNAME" />
+          <ScalarProperty Name="PROPERTY" ColumnName="PROPERTY" />
+          <ScalarProperty Name="START_SCN" ColumnName="START_SCN" />
+          <ScalarProperty Name="DROP_SCN" ColumnName="DROP_SCN" />
+          <ScalarProperty Name="XIDUSN" ColumnName="XIDUSN" />
+          <ScalarProperty Name="XIDSLT" ColumnName="XIDSLT" />
+          <ScalarProperty Name="XIDSQN" ColumnName="XIDSQN" />
+          <ScalarProperty Name="FLAGS" ColumnName="FLAGS" />
+          <ScalarProperty Name="LOGMNR_SPARE1" ColumnName="LOGMNR_SPARE1" />
+          <ScalarProperty Name="LOGMNR_SPARE2" ColumnName="LOGMNR_SPARE2" />
+          <ScalarProperty Name="LOGMNR_SPARE3" ColumnName="LOGMNR_SPARE3" />
+          <ScalarProperty Name="LOGMNR_SPARE4" ColumnName="LOGMNR_SPARE4" />
+          <ScalarProperty Name="LOGMNR_SPARE5" ColumnName="LOGMNR_SPARE5" />
+          <ScalarProperty Name="LOGMNR_SPARE6" ColumnName="LOGMNR_SPARE6" />
+          <ScalarProperty Name="LOGMNR_SPARE7" ColumnName="LOGMNR_SPARE7" />
+          <ScalarProperty Name="LOGMNR_SPARE8" ColumnName="LOGMNR_SPARE8" />
+          <ScalarProperty Name="LOGMNR_SPARE9" ColumnName="LOGMNR_SPARE9" />
+          <ScalarProperty Name="PARTTYPE" ColumnName="PARTTYPE" />
+          <ScalarProperty Name="SUBPARTTYPE" ColumnName="SUBPARTTYPE" />
+          <ScalarProperty Name="UNSUPPORTEDCOLS" ColumnName="UNSUPPORTEDCOLS" />
+          <ScalarProperty Name="COMPLEXTYPECOLS" ColumnName="COMPLEXTYPECOLS" />
+          <ScalarProperty Name="NTPARENTOBJNUM" ColumnName="NTPARENTOBJNUM" />
+          <ScalarProperty Name="NTPARENTOBJVERSION" ColumnName="NTPARENTOBJVERSION" />
+          <ScalarProperty Name="NTPARENTINTCOLNUM" ColumnName="NTPARENTINTCOLNUM" />
+          <ScalarProperty Name="LOGMNRTLOFLAGS" ColumnName="LOGMNRTLOFLAGS" />
+          <ScalarProperty Name="LOGMNRMCV" ColumnName="LOGMNRMCV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNRP_CTAS_PART_MAP">
+      <EntityTypeMapping TypeName="Model.LOGMNRP_CTAS_PART_MAP">
+        <MappingFragment StoreEntitySet="LOGMNRP_CTAS_PART_MAP">
+          <ScalarProperty Name="LOGMNR_UID" ColumnName="LOGMNR_UID" />
+          <ScalarProperty Name="BASEOBJ_" ColumnName="BASEOBJ#" />
+          <ScalarProperty Name="BASEOBJV_" ColumnName="BASEOBJV#" />
+          <ScalarProperty Name="KEYOBJ_" ColumnName="KEYOBJ#" />
+          <ScalarProperty Name="PART_" ColumnName="PART#" />
+          <ScalarProperty Name="SPARE1" ColumnName="SPARE1" />
+          <ScalarProperty Name="SPARE2" ColumnName="SPARE2" />
+          <ScalarProperty Name="SPARE3" ColumnName="SPARE3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNRT_MDDL_">
+      <EntityTypeMapping TypeName="Model.LOGMNRT_MDDL_">
+        <MappingFragment StoreEntitySet="LOGMNRT_MDDL$">
+          <ScalarProperty Name="SOURCE_OBJ_" ColumnName="SOURCE_OBJ#" />
+          <ScalarProperty Name="SOURCE_ROWID" ColumnName="SOURCE_ROWID" />
+          <ScalarProperty Name="DEST_ROWID" ColumnName="DEST_ROWID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGSTDBY_EDS_TABLES">
+      <EntityTypeMapping TypeName="Model.LOGSTDBY_EDS_TABLES">
+        <MappingFragment StoreEntitySet="LOGSTDBY$EDS_TABLES">
+          <ScalarProperty Name="OWNER" ColumnName="OWNER" />
+          <ScalarProperty Name="TABLE_NAME" ColumnName="TABLE_NAME" />
+          <ScalarProperty Name="SHADOW_TABLE_NAME" ColumnName="SHADOW_TABLE_NAME" />
+          <ScalarProperty Name="BASE_TRIGGER_NAME" ColumnName="BASE_TRIGGER_NAME" />
+          <ScalarProperty Name="SHADOW_TRIGGER_NAME" ColumnName="SHADOW_TRIGGER_NAME" />
+          <ScalarProperty Name="DBLINK" ColumnName="DBLINK" />
+          <ScalarProperty Name="FLAGS" ColumnName="FLAGS" />
+          <ScalarProperty Name="STATE" ColumnName="STATE" />
+          <ScalarProperty Name="OBJV" ColumnName="OBJV" />
+          <ScalarProperty Name="OBJ_" ColumnName="OBJ#" />
+          <ScalarProperty Name="SOBJ_" ColumnName="SOBJ#" />
+          <ScalarProperty Name="CTIME" ColumnName="CTIME" />
+          <ScalarProperty Name="SPARE1" ColumnName="SPARE1" />
+          <ScalarProperty Name="SPARE2" ColumnName="SPARE2" />
+          <ScalarProperty Name="SPARE3" ColumnName="SPARE3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGSTDBY_FLASHBACK_SCN">
+      <EntityTypeMapping TypeName="Model.LOGSTDBY_FLASHBACK_SCN">
+        <MappingFragment StoreEntitySet="LOGSTDBY$FLASHBACK_SCN">
+          <ScalarProperty Name="PRIMARY_SCN" ColumnName="PRIMARY_SCN" />
+          <ScalarProperty Name="PRIMARY_TIME" ColumnName="PRIMARY_TIME" />
+          <ScalarProperty Name="STANDBY_SCN" ColumnName="STANDBY_SCN" />
+          <ScalarProperty Name="STANDBY_TIME" ColumnName="STANDBY_TIME" />
+          <ScalarProperty Name="SPARE1" ColumnName="SPARE1" />
+          <ScalarProperty Name="SPARE2" ColumnName="SPARE2" />
+          <ScalarProperty Name="SPARE3" ColumnName="SPARE3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MVIEW__ADV_AJG">
+      <EntityTypeMapping TypeName="Model.MVIEW__ADV_AJG">
+        <MappingFragment StoreEntitySet="MVIEW$_ADV_AJG">
+          <ScalarProperty Name="AJGID_" ColumnName="AJGID#" />
+          <ScalarProperty Name="RUNID_" ColumnName="RUNID#" />
+          <ScalarProperty Name="AJGDESLEN" ColumnName="AJGDESLEN" />
+          <ScalarProperty Name="AJGDES" ColumnName="AJGDES" />
+          <ScalarProperty Name="HASHVALUE" ColumnName="HASHVALUE" />
+          <ScalarProperty Name="FREQUENCY" ColumnName="FREQUENCY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MVIEW__ADV_CLIQUE">
+      <EntityTypeMapping TypeName="Model.MVIEW__ADV_CLIQUE">
+        <MappingFragment StoreEntitySet="MVIEW$_ADV_CLIQUE">
+          <ScalarProperty Name="CLIQUEID_" ColumnName="CLIQUEID#" />
+          <ScalarProperty Name="RUNID_" ColumnName="RUNID#" />
+          <ScalarProperty Name="CLIQUEDESLEN" ColumnName="CLIQUEDESLEN" />
+          <ScalarProperty Name="CLIQUEDES" ColumnName="CLIQUEDES" />
+          <ScalarProperty Name="HASHVALUE" ColumnName="HASHVALUE" />
+          <ScalarProperty Name="FREQUENCY" ColumnName="FREQUENCY" />
+          <ScalarProperty Name="BYTECOST" ColumnName="BYTECOST" />
+          <ScalarProperty Name="ROWSIZE" ColumnName="ROWSIZE" />
+          <ScalarProperty Name="NUMROWS" ColumnName="NUMROWS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MVIEW__ADV_ELIGIBLE">
+      <EntityTypeMapping TypeName="Model.MVIEW__ADV_ELIGIBLE">
+        <MappingFragment StoreEntitySet="MVIEW$_ADV_ELIGIBLE">
+          <ScalarProperty Name="SUMOBJN_" ColumnName="SUMOBJN#" />
+          <ScalarProperty Name="RUNID_" ColumnName="RUNID#" />
+          <ScalarProperty Name="BYTECOST" ColumnName="BYTECOST" />
+          <ScalarProperty Name="FLAGS" ColumnName="FLAGS" />
+          <ScalarProperty Name="FREQUENCY" ColumnName="FREQUENCY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MVIEW__ADV_FILTER">
+      <EntityTypeMapping TypeName="Model.MVIEW__ADV_FILTER">
+        <MappingFragment StoreEntitySet="MVIEW$_ADV_FILTER">
+          <ScalarProperty Name="FILTERID_" ColumnName="FILTERID#" />
+          <ScalarProperty Name="SUBFILTERNUM_" ColumnName="SUBFILTERNUM#" />
+          <ScalarProperty Name="SUBFILTERTYPE" ColumnName="SUBFILTERTYPE" />
+          <ScalarProperty Name="STR_VALUE" ColumnName="STR_VALUE" />
+          <ScalarProperty Name="NUM_VALUE1" ColumnName="NUM_VALUE1" />
+          <ScalarProperty Name="NUM_VALUE2" ColumnName="NUM_VALUE2" />
+          <ScalarProperty Name="DATE_VALUE1" ColumnName="DATE_VALUE1" />
+          <ScalarProperty Name="DATE_VALUE2" ColumnName="DATE_VALUE2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MVIEW__ADV_FJG">
+      <EntityTypeMapping TypeName="Model.MVIEW__ADV_FJG">
+        <MappingFragment StoreEntitySet="MVIEW$_ADV_FJG">
+          <ScalarProperty Name="FJGID_" ColumnName="FJGID#" />
+          <ScalarProperty Name="AJGID_" ColumnName="AJGID#" />
+          <ScalarProperty Name="FJGDESLEN" ColumnName="FJGDESLEN" />
+          <ScalarProperty Name="FJGDES" ColumnName="FJGDES" />
+          <ScalarProperty Name="HASHVALUE" ColumnName="HASHVALUE" />
+          <ScalarProperty Name="FREQUENCY" ColumnName="FREQUENCY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MVIEW__ADV_GC">
+      <EntityTypeMapping TypeName="Model.MVIEW__ADV_GC">
+        <MappingFragment StoreEntitySet="MVIEW$_ADV_GC">
+          <ScalarProperty Name="GCID_" ColumnName="GCID#" />
+          <ScalarProperty Name="FJGID_" ColumnName="FJGID#" />
+          <ScalarProperty Name="GCDESLEN" ColumnName="GCDESLEN" />
+          <ScalarProperty Name="GCDES" ColumnName="GCDES" />
+          <ScalarProperty Name="HASHVALUE" ColumnName="HASHVALUE" />
+          <ScalarProperty Name="FREQUENCY" ColumnName="FREQUENCY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MVIEW__ADV_INFO">
+      <EntityTypeMapping TypeName="Model.MVIEW__ADV_INFO">
+        <MappingFragment StoreEntitySet="MVIEW$_ADV_INFO">
+          <ScalarProperty Name="RUNID_" ColumnName="RUNID#" />
+          <ScalarProperty Name="SEQ_" ColumnName="SEQ#" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="INFOLEN" ColumnName="INFOLEN" />
+          <ScalarProperty Name="INFO" ColumnName="INFO" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="FLAG" ColumnName="FLAG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MVIEW__ADV_JOURNAL">
+      <EntityTypeMapping TypeName="Model.MVIEW__ADV_JOURNAL">
+        <MappingFragment StoreEntitySet="MVIEW$_ADV_JOURNAL">
+          <ScalarProperty Name="RUNID_" ColumnName="RUNID#" />
+          <ScalarProperty Name="SEQ_" ColumnName="SEQ#" />
+          <ScalarProperty Name="TIMESTAMP" ColumnName="TIMESTAMP" />
+          <ScalarProperty Name="FLAGS" ColumnName="FLAGS" />
+          <ScalarProperty Name="NUM" ColumnName="NUM" />
+          <ScalarProperty Name="TEXT" ColumnName="TEXT" />
+          <ScalarProperty Name="TEXTLEN" ColumnName="TEXTLEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MVIEW__ADV_LEVEL">
+      <EntityTypeMapping TypeName="Model.MVIEW__ADV_LEVEL">
+        <MappingFragment StoreEntitySet="MVIEW$_ADV_LEVEL">
+          <ScalarProperty Name="RUNID_" ColumnName="RUNID#" />
+          <ScalarProperty Name="LEVELID_" ColumnName="LEVELID#" />
+          <ScalarProperty Name="DIMOBJ_" ColumnName="DIMOBJ#" />
+          <ScalarProperty Name="FLAGS" ColumnName="FLAGS" />
+          <ScalarProperty Name="TBLOBJ_" ColumnName="TBLOBJ#" />
+          <ScalarProperty Name="COLUMNLIST" ColumnName="COLUMNLIST" />
+          <ScalarProperty Name="LEVELNAME" ColumnName="LEVELNAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MVIEW__ADV_LOG">
+      <EntityTypeMapping TypeName="Model.MVIEW__ADV_LOG">
+        <MappingFragment StoreEntitySet="MVIEW$_ADV_LOG">
+          <ScalarProperty Name="RUNID_" ColumnName="RUNID#" />
+          <ScalarProperty Name="FILTERID_" ColumnName="FILTERID#" />
+          <ScalarProperty Name="RUN_BEGIN" ColumnName="RUN_BEGIN" />
+          <ScalarProperty Name="RUN_END" ColumnName="RUN_END" />
+          <ScalarProperty Name="RUN_TYPE" ColumnName="RUN_TYPE" />
+          <ScalarProperty Name="UNAME" ColumnName="UNAME" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="MESSAGE" ColumnName="MESSAGE" />
+          <ScalarProperty Name="COMPLETED" ColumnName="COMPLETED" />
+          <ScalarProperty Name="TOTAL" ColumnName="TOTAL" />
+          <ScalarProperty Name="ERROR_CODE" ColumnName="ERROR_CODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MVIEW__ADV_OUTPUT">
+      <EntityTypeMapping TypeName="Model.MVIEW__ADV_OUTPUT">
+        <MappingFragment StoreEntitySet="MVIEW$_ADV_OUTPUT">
+          <ScalarProperty Name="RUNID_" ColumnName="RUNID#" />
+          <ScalarProperty Name="OUTPUT_TYPE" ColumnName="OUTPUT_TYPE" />
+          <ScalarProperty Name="RANK_" ColumnName="RANK#" />
+          <ScalarProperty Name="ACTION_TYPE" ColumnName="ACTION_TYPE" />
+          <ScalarProperty Name="SUMMARY_OWNER" ColumnName="SUMMARY_OWNER" />
+          <ScalarProperty Name="SUMMARY_NAME" ColumnName="SUMMARY_NAME" />
+          <ScalarProperty Name="GROUP_BY_COLUMNS" ColumnName="GROUP_BY_COLUMNS" />
+          <ScalarProperty Name="WHERE_CLAUSE" ColumnName="WHERE_CLAUSE" />
+          <ScalarProperty Name="FROM_CLAUSE" ColumnName="FROM_CLAUSE" />
+          <ScalarProperty Name="MEASURES_LIST" ColumnName="MEASURES_LIST" />
+          <ScalarProperty Name="FACT_TABLES" ColumnName="FACT_TABLES" />
+          <ScalarProperty Name="GROUPING_LEVELS" ColumnName="GROUPING_LEVELS" />
+          <ScalarProperty Name="QUERYLEN" ColumnName="QUERYLEN" />
+          <ScalarProperty Name="QUERY_TEXT" ColumnName="QUERY_TEXT" />
+          <ScalarProperty Name="STORAGE_IN_BYTES" ColumnName="STORAGE_IN_BYTES" />
+          <ScalarProperty Name="PCT_PERFORMANCE_GAIN" ColumnName="PCT_PERFORMANCE_GAIN" />
+          <ScalarProperty Name="FREQUENCY" ColumnName="FREQUENCY" />
+          <ScalarProperty Name="CUMULATIVE_BENEFIT" ColumnName="CUMULATIVE_BENEFIT" />
+          <ScalarProperty Name="BENEFIT_TO_COST_RATIO" ColumnName="BENEFIT_TO_COST_RATIO" />
+          <ScalarProperty Name="VALIDATED" ColumnName="VALIDATED" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MVIEW__ADV_PARAMETERS">
+      <EntityTypeMapping TypeName="Model.MVIEW__ADV_PARAMETERS">
+        <MappingFragment StoreEntitySet="MVIEW$_ADV_PARAMETERS">
+          <ScalarProperty Name="PARAMETER_NAME" ColumnName="PARAMETER_NAME" />
+          <ScalarProperty Name="PARAMETER_TYPE" ColumnName="PARAMETER_TYPE" />
+          <ScalarProperty Name="STRING_VALUE" ColumnName="STRING_VALUE" />
+          <ScalarProperty Name="DATE_VALUE" ColumnName="DATE_VALUE" />
+          <ScalarProperty Name="NUMERICAL_VALUE" ColumnName="NUMERICAL_VALUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MVIEW__ADV_ROLLUP">
+      <EntityTypeMapping TypeName="Model.MVIEW__ADV_ROLLUP">
+        <MappingFragment StoreEntitySet="MVIEW$_ADV_ROLLUP">
+          <ScalarProperty Name="RUNID_" ColumnName="RUNID#" />
+          <ScalarProperty Name="CLEVELID_" ColumnName="CLEVELID#" />
+          <ScalarProperty Name="PLEVELID_" ColumnName="PLEVELID#" />
+          <ScalarProperty Name="FLAGS" ColumnName="FLAGS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MVIEW__ADV_WORKLOAD">
+      <EntityTypeMapping TypeName="Model.MVIEW__ADV_WORKLOAD">
+        <MappingFragment StoreEntitySet="MVIEW$_ADV_WORKLOAD">
+          <ScalarProperty Name="QUERYID_" ColumnName="QUERYID#" />
+          <ScalarProperty Name="COLLECTIONID_" ColumnName="COLLECTIONID#" />
+          <ScalarProperty Name="COLLECTTIME" ColumnName="COLLECTTIME" />
+          <ScalarProperty Name="APPLICATION" ColumnName="APPLICATION" />
+          <ScalarProperty Name="CARDINALITY" ColumnName="CARDINALITY" />
+          <ScalarProperty Name="RESULTSIZE" ColumnName="RESULTSIZE" />
+          <ScalarProperty Name="UNAME" ColumnName="UNAME" />
+          <ScalarProperty Name="QDATE" ColumnName="QDATE" />
+          <ScalarProperty Name="PRIORITY" ColumnName="PRIORITY" />
+          <ScalarProperty Name="EXEC_TIME" ColumnName="EXEC_TIME" />
+          <ScalarProperty Name="SQL_TEXT" ColumnName="SQL_TEXT" />
+          <ScalarProperty Name="SQL_TEXTLEN" ColumnName="SQL_TEXTLEN" />
+          <ScalarProperty Name="SQL_HASH" ColumnName="SQL_HASH" />
+          <ScalarProperty Name="SQL_ADDR" ColumnName="SQL_ADDR" />
+          <ScalarProperty Name="FREQUENCY" ColumnName="FREQUENCY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__AUDIT_ATTRIBUTE">
+      <EntityTypeMapping TypeName="Model.REPCAT__AUDIT_ATTRIBUTE">
+        <MappingFragment StoreEntitySet="REPCAT$_AUDIT_ATTRIBUTE">
+          <ScalarProperty Name="ATTRIBUTE" ColumnName="ATTRIBUTE" />
+          <ScalarProperty Name="DATA_TYPE_ID" ColumnName="DATA_TYPE_ID" />
+          <ScalarProperty Name="DATA_LENGTH" ColumnName="DATA_LENGTH" />
+          <ScalarProperty Name="SOURCE" ColumnName="SOURCE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__AUDIT_COLUMN">
+      <EntityTypeMapping TypeName="Model.REPCAT__AUDIT_COLUMN">
+        <MappingFragment StoreEntitySet="REPCAT$_AUDIT_COLUMN">
+          <ScalarProperty Name="SNAME" ColumnName="SNAME" />
+          <ScalarProperty Name="ONAME" ColumnName="ONAME" />
+          <ScalarProperty Name="COLUMN_NAME" ColumnName="COLUMN_NAME" />
+          <ScalarProperty Name="BASE_SNAME" ColumnName="BASE_SNAME" />
+          <ScalarProperty Name="BASE_ONAME" ColumnName="BASE_ONAME" />
+          <ScalarProperty Name="BASE_CONFLICT_TYPE_ID" ColumnName="BASE_CONFLICT_TYPE_ID" />
+          <ScalarProperty Name="BASE_REFERENCE_NAME" ColumnName="BASE_REFERENCE_NAME" />
+          <ScalarProperty Name="ATTRIBUTE" ColumnName="ATTRIBUTE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__COLUMN_GROUP">
+      <EntityTypeMapping TypeName="Model.REPCAT__COLUMN_GROUP">
+        <MappingFragment StoreEntitySet="REPCAT$_COLUMN_GROUP">
+          <ScalarProperty Name="SNAME" ColumnName="SNAME" />
+          <ScalarProperty Name="ONAME" ColumnName="ONAME" />
+          <ScalarProperty Name="GROUP_NAME" ColumnName="GROUP_NAME" />
+          <ScalarProperty Name="GROUP_COMMENT" ColumnName="GROUP_COMMENT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__CONFLICT">
+      <EntityTypeMapping TypeName="Model.REPCAT__CONFLICT">
+        <MappingFragment StoreEntitySet="REPCAT$_CONFLICT">
+          <ScalarProperty Name="SNAME" ColumnName="SNAME" />
+          <ScalarProperty Name="ONAME" ColumnName="ONAME" />
+          <ScalarProperty Name="CONFLICT_TYPE_ID" ColumnName="CONFLICT_TYPE_ID" />
+          <ScalarProperty Name="REFERENCE_NAME" ColumnName="REFERENCE_NAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__EXCEPTIONS">
+      <EntityTypeMapping TypeName="Model.REPCAT__EXCEPTIONS">
+        <MappingFragment StoreEntitySet="REPCAT$_EXCEPTIONS">
+          <ScalarProperty Name="EXCEPTION_ID" ColumnName="EXCEPTION_ID" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="REQUEST" ColumnName="REQUEST" />
+          <ScalarProperty Name="JOB" ColumnName="JOB" />
+          <ScalarProperty Name="ERROR_DATE" ColumnName="ERROR_DATE" />
+          <ScalarProperty Name="ERROR_NUMBER" ColumnName="ERROR_NUMBER" />
+          <ScalarProperty Name="ERROR_MESSAGE" ColumnName="ERROR_MESSAGE" />
+          <ScalarProperty Name="LINE_NUMBER" ColumnName="LINE_NUMBER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__EXTENSION">
+      <EntityTypeMapping TypeName="Model.REPCAT__EXTENSION">
+        <MappingFragment StoreEntitySet="REPCAT$_EXTENSION">
+          <ScalarProperty Name="EXTENSION_ID" ColumnName="EXTENSION_ID" />
+          <ScalarProperty Name="EXTENSION_CODE" ColumnName="EXTENSION_CODE" />
+          <ScalarProperty Name="MASTERDEF" ColumnName="MASTERDEF" />
+          <ScalarProperty Name="EXPORT_REQUIRED" ColumnName="EXPORT_REQUIRED" />
+          <ScalarProperty Name="REPCATLOG_ID" ColumnName="REPCATLOG_ID" />
+          <ScalarProperty Name="EXTENSION_STATUS" ColumnName="EXTENSION_STATUS" />
+          <ScalarProperty Name="FLASHBACK_SCN" ColumnName="FLASHBACK_SCN" />
+          <ScalarProperty Name="PUSH_TO_MDEF" ColumnName="PUSH_TO_MDEF" />
+          <ScalarProperty Name="PUSH_TO_NEW" ColumnName="PUSH_TO_NEW" />
+          <ScalarProperty Name="PERCENTAGE_FOR_CATCHUP_MDEF" ColumnName="PERCENTAGE_FOR_CATCHUP_MDEF" />
+          <ScalarProperty Name="CYCLE_SECONDS_MDEF" ColumnName="CYCLE_SECONDS_MDEF" />
+          <ScalarProperty Name="PERCENTAGE_FOR_CATCHUP_NEW" ColumnName="PERCENTAGE_FOR_CATCHUP_NEW" />
+          <ScalarProperty Name="CYCLE_SECONDS_NEW" ColumnName="CYCLE_SECONDS_NEW" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__FLAVOR_OBJECTS">
+      <EntityTypeMapping TypeName="Model.REPCAT__FLAVOR_OBJECTS">
+        <MappingFragment StoreEntitySet="REPCAT$_FLAVOR_OBJECTS">
+          <ScalarProperty Name="FLAVOR_ID" ColumnName="FLAVOR_ID" />
+          <ScalarProperty Name="GOWNER" ColumnName="GOWNER" />
+          <ScalarProperty Name="GNAME" ColumnName="GNAME" />
+          <ScalarProperty Name="SNAME" ColumnName="SNAME" />
+          <ScalarProperty Name="ONAME" ColumnName="ONAME" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="VERSION_" ColumnName="VERSION#" />
+          <ScalarProperty Name="HASHCODE" ColumnName="HASHCODE" />
+          <ScalarProperty Name="COLUMNS_PRESENT" ColumnName="COLUMNS_PRESENT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__GENERATED">
+      <EntityTypeMapping TypeName="Model.REPCAT__GENERATED">
+        <MappingFragment StoreEntitySet="REPCAT$_GENERATED">
+          <ScalarProperty Name="SNAME" ColumnName="SNAME" />
+          <ScalarProperty Name="ONAME" ColumnName="ONAME" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="REASON" ColumnName="REASON" />
+          <ScalarProperty Name="BASE_SNAME" ColumnName="BASE_SNAME" />
+          <ScalarProperty Name="BASE_ONAME" ColumnName="BASE_ONAME" />
+          <ScalarProperty Name="BASE_TYPE" ColumnName="BASE_TYPE" />
+          <ScalarProperty Name="PACKAGE_PREFIX" ColumnName="PACKAGE_PREFIX" />
+          <ScalarProperty Name="PROCEDURE_PREFIX" ColumnName="PROCEDURE_PREFIX" />
+          <ScalarProperty Name="DISTRIBUTED" ColumnName="DISTRIBUTED" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__GROUPED_COLUMN">
+      <EntityTypeMapping TypeName="Model.REPCAT__GROUPED_COLUMN">
+        <MappingFragment StoreEntitySet="REPCAT$_GROUPED_COLUMN">
+          <ScalarProperty Name="SNAME" ColumnName="SNAME" />
+          <ScalarProperty Name="ONAME" ColumnName="ONAME" />
+          <ScalarProperty Name="GROUP_NAME" ColumnName="GROUP_NAME" />
+          <ScalarProperty Name="COLUMN_NAME" ColumnName="COLUMN_NAME" />
+          <ScalarProperty Name="POS" ColumnName="POS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__INSTANTIATION_DDL">
+      <EntityTypeMapping TypeName="Model.REPCAT__INSTANTIATION_DDL">
+        <MappingFragment StoreEntitySet="REPCAT$_INSTANTIATION_DDL">
+          <ScalarProperty Name="REFRESH_TEMPLATE_ID" ColumnName="REFRESH_TEMPLATE_ID" />
+          <ScalarProperty Name="DDL_TEXT" ColumnName="DDL_TEXT" />
+          <ScalarProperty Name="DDL_NUM" ColumnName="DDL_NUM" />
+          <ScalarProperty Name="PHASE" ColumnName="PHASE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__KEY_COLUMNS">
+      <EntityTypeMapping TypeName="Model.REPCAT__KEY_COLUMNS">
+        <MappingFragment StoreEntitySet="REPCAT$_KEY_COLUMNS">
+          <ScalarProperty Name="SNAME" ColumnName="SNAME" />
+          <ScalarProperty Name="ONAME" ColumnName="ONAME" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="COL" ColumnName="COL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__OBJECT_TYPES">
+      <EntityTypeMapping TypeName="Model.REPCAT__OBJECT_TYPES">
+        <MappingFragment StoreEntitySet="REPCAT$_OBJECT_TYPES">
+          <ScalarProperty Name="OBJECT_TYPE_ID" ColumnName="OBJECT_TYPE_ID" />
+          <ScalarProperty Name="OBJECT_TYPE_NAME" ColumnName="OBJECT_TYPE_NAME" />
+          <ScalarProperty Name="FLAGS" ColumnName="FLAGS" />
+          <ScalarProperty Name="SPARE1" ColumnName="SPARE1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__PARAMETER_COLUMN">
+      <EntityTypeMapping TypeName="Model.REPCAT__PARAMETER_COLUMN">
+        <MappingFragment StoreEntitySet="REPCAT$_PARAMETER_COLUMN">
+          <ScalarProperty Name="SNAME" ColumnName="SNAME" />
+          <ScalarProperty Name="ONAME" ColumnName="ONAME" />
+          <ScalarProperty Name="CONFLICT_TYPE_ID" ColumnName="CONFLICT_TYPE_ID" />
+          <ScalarProperty Name="REFERENCE_NAME" ColumnName="REFERENCE_NAME" />
+          <ScalarProperty Name="SEQUENCE_NO" ColumnName="SEQUENCE_NO" />
+          <ScalarProperty Name="PARAMETER_TABLE_NAME" ColumnName="PARAMETER_TABLE_NAME" />
+          <ScalarProperty Name="PARAMETER_COLUMN_NAME" ColumnName="PARAMETER_COLUMN_NAME" />
+          <ScalarProperty Name="PARAMETER_SEQUENCE_NO" ColumnName="PARAMETER_SEQUENCE_NO" />
+          <ScalarProperty Name="COLUMN_POS" ColumnName="COLUMN_POS" />
+          <ScalarProperty Name="ATTRIBUTE_SEQUENCE_NO" ColumnName="ATTRIBUTE_SEQUENCE_NO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__PRIORITY">
+      <EntityTypeMapping TypeName="Model.REPCAT__PRIORITY">
+        <MappingFragment StoreEntitySet="REPCAT$_PRIORITY">
+          <ScalarProperty Name="SNAME" ColumnName="SNAME" />
+          <ScalarProperty Name="PRIORITY_GROUP" ColumnName="PRIORITY_GROUP" />
+          <ScalarProperty Name="PRIORITY" ColumnName="PRIORITY" />
+          <ScalarProperty Name="RAW_VALUE" ColumnName="RAW_VALUE" />
+          <ScalarProperty Name="CHAR_VALUE" ColumnName="CHAR_VALUE" />
+          <ScalarProperty Name="NUMBER_VALUE" ColumnName="NUMBER_VALUE" />
+          <ScalarProperty Name="DATE_VALUE" ColumnName="DATE_VALUE" />
+          <ScalarProperty Name="VARCHAR2_VALUE" ColumnName="VARCHAR2_VALUE" />
+          <ScalarProperty Name="NCHAR_VALUE" ColumnName="NCHAR_VALUE" />
+          <ScalarProperty Name="NVARCHAR2_VALUE" ColumnName="NVARCHAR2_VALUE" />
+          <ScalarProperty Name="LARGE_CHAR_VALUE" ColumnName="LARGE_CHAR_VALUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__PRIORITY_GROUP">
+      <EntityTypeMapping TypeName="Model.REPCAT__PRIORITY_GROUP">
+        <MappingFragment StoreEntitySet="REPCAT$_PRIORITY_GROUP">
+          <ScalarProperty Name="SNAME" ColumnName="SNAME" />
+          <ScalarProperty Name="PRIORITY_GROUP" ColumnName="PRIORITY_GROUP" />
+          <ScalarProperty Name="DATA_TYPE_ID" ColumnName="DATA_TYPE_ID" />
+          <ScalarProperty Name="FIXED_DATA_LENGTH" ColumnName="FIXED_DATA_LENGTH" />
+          <ScalarProperty Name="PRIORITY_COMMENT" ColumnName="PRIORITY_COMMENT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__REFRESH_TEMPLATES">
+      <EntityTypeMapping TypeName="Model.REPCAT__REFRESH_TEMPLATES">
+        <MappingFragment StoreEntitySet="REPCAT$_REFRESH_TEMPLATES">
+          <ScalarProperty Name="REFRESH_TEMPLATE_ID" ColumnName="REFRESH_TEMPLATE_ID" />
+          <ScalarProperty Name="OWNER" ColumnName="OWNER" />
+          <ScalarProperty Name="REFRESH_GROUP_NAME" ColumnName="REFRESH_GROUP_NAME" />
+          <ScalarProperty Name="REFRESH_TEMPLATE_NAME" ColumnName="REFRESH_TEMPLATE_NAME" />
+          <ScalarProperty Name="TEMPLATE_COMMENT" ColumnName="TEMPLATE_COMMENT" />
+          <ScalarProperty Name="PUBLIC_TEMPLATE" ColumnName="PUBLIC_TEMPLATE" />
+          <ScalarProperty Name="LAST_MODIFIED" ColumnName="LAST_MODIFIED" />
+          <ScalarProperty Name="MODIFIED_BY" ColumnName="MODIFIED_BY" />
+          <ScalarProperty Name="CREATION_DATE" ColumnName="CREATION_DATE" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="REFRESH_GROUP_ID" ColumnName="REFRESH_GROUP_ID" />
+          <ScalarProperty Name="TEMPLATE_TYPE_ID" ColumnName="TEMPLATE_TYPE_ID" />
+          <ScalarProperty Name="TEMPLATE_STATUS_ID" ColumnName="TEMPLATE_STATUS_ID" />
+          <ScalarProperty Name="FLAGS" ColumnName="FLAGS" />
+          <ScalarProperty Name="SPARE1" ColumnName="SPARE1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__REPCAT">
+      <EntityTypeMapping TypeName="Model.REPCAT__REPCAT">
+        <MappingFragment StoreEntitySet="REPCAT$_REPCAT">
+          <ScalarProperty Name="GOWNER" ColumnName="GOWNER" />
+          <ScalarProperty Name="SNAME" ColumnName="SNAME" />
+          <ScalarProperty Name="MASTER" ColumnName="MASTER" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="SCHEMA_COMMENT" ColumnName="SCHEMA_COMMENT" />
+          <ScalarProperty Name="FLAVOR_ID" ColumnName="FLAVOR_ID" />
+          <ScalarProperty Name="FLAG" ColumnName="FLAG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__REPCATLOG">
+      <EntityTypeMapping TypeName="Model.REPCAT__REPCATLOG">
+        <MappingFragment StoreEntitySet="REPCAT$_REPCATLOG">
+          <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SOURCE" ColumnName="SOURCE" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="TIMESTAMP" ColumnName="TIMESTAMP" />
+          <ScalarProperty Name="ROLE" ColumnName="ROLE" />
+          <ScalarProperty Name="MASTER" ColumnName="MASTER" />
+          <ScalarProperty Name="SNAME" ColumnName="SNAME" />
+          <ScalarProperty Name="REQUEST" ColumnName="REQUEST" />
+          <ScalarProperty Name="ONAME" ColumnName="ONAME" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="A_COMMENT" ColumnName="A_COMMENT" />
+          <ScalarProperty Name="BOOL_ARG" ColumnName="BOOL_ARG" />
+          <ScalarProperty Name="ANO_BOOL_ARG" ColumnName="ANO_BOOL_ARG" />
+          <ScalarProperty Name="INT_ARG" ColumnName="INT_ARG" />
+          <ScalarProperty Name="ANO_INT_ARG" ColumnName="ANO_INT_ARG" />
+          <ScalarProperty Name="LINES" ColumnName="LINES" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="MESSAGE" ColumnName="MESSAGE" />
+          <ScalarProperty Name="ERRNUM" ColumnName="ERRNUM" />
+          <ScalarProperty Name="GNAME" ColumnName="GNAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__REPCOLUMN">
+      <EntityTypeMapping TypeName="Model.REPCAT__REPCOLUMN">
+        <MappingFragment StoreEntitySet="REPCAT$_REPCOLUMN">
+          <ScalarProperty Name="SNAME" ColumnName="SNAME" />
+          <ScalarProperty Name="ONAME" ColumnName="ONAME" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="CNAME" ColumnName="CNAME" />
+          <ScalarProperty Name="LCNAME" ColumnName="LCNAME" />
+          <ScalarProperty Name="TOID" ColumnName="TOID" />
+          <ScalarProperty Name="VERSION_" ColumnName="VERSION#" />
+          <ScalarProperty Name="HASHCODE" ColumnName="HASHCODE" />
+          <ScalarProperty Name="CTYPE_NAME" ColumnName="CTYPE_NAME" />
+          <ScalarProperty Name="CTYPE_OWNER" ColumnName="CTYPE_OWNER" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="POS" ColumnName="POS" />
+          <ScalarProperty Name="TOP" ColumnName="TOP" />
+          <ScalarProperty Name="FLAG" ColumnName="FLAG" />
+          <ScalarProperty Name="CTYPE" ColumnName="CTYPE" />
+          <ScalarProperty Name="LENGTH" ColumnName="LENGTH" />
+          <ScalarProperty Name="PRECISION_" ColumnName="PRECISION#" />
+          <ScalarProperty Name="SCALE" ColumnName="SCALE" />
+          <ScalarProperty Name="NULL_" ColumnName="NULL$" />
+          <ScalarProperty Name="CHARSETID" ColumnName="CHARSETID" />
+          <ScalarProperty Name="CHARSETFORM" ColumnName="CHARSETFORM" />
+          <ScalarProperty Name="PROPERTY" ColumnName="PROPERTY" />
+          <ScalarProperty Name="CLENGTH" ColumnName="CLENGTH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__REPOBJECT">
+      <EntityTypeMapping TypeName="Model.REPCAT__REPOBJECT">
+        <MappingFragment StoreEntitySet="REPCAT$_REPOBJECT">
+          <ScalarProperty Name="SNAME" ColumnName="SNAME" />
+          <ScalarProperty Name="ONAME" ColumnName="ONAME" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="VERSION_" ColumnName="VERSION#" />
+          <ScalarProperty Name="HASHCODE" ColumnName="HASHCODE" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OBJECT_COMMENT" ColumnName="OBJECT_COMMENT" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="GENPACKAGE" ColumnName="GENPACKAGE" />
+          <ScalarProperty Name="GENPLOGID" ColumnName="GENPLOGID" />
+          <ScalarProperty Name="GENTRIGGER" ColumnName="GENTRIGGER" />
+          <ScalarProperty Name="GENTLOGID" ColumnName="GENTLOGID" />
+          <ScalarProperty Name="GOWNER" ColumnName="GOWNER" />
+          <ScalarProperty Name="GNAME" ColumnName="GNAME" />
+          <ScalarProperty Name="FLAG" ColumnName="FLAG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__REPPROP">
+      <EntityTypeMapping TypeName="Model.REPCAT__REPPROP">
+        <MappingFragment StoreEntitySet="REPCAT$_REPPROP">
+          <ScalarProperty Name="SNAME" ColumnName="SNAME" />
+          <ScalarProperty Name="ONAME" ColumnName="ONAME" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="DBLINK" ColumnName="DBLINK" />
+          <ScalarProperty Name="HOW" ColumnName="HOW" />
+          <ScalarProperty Name="PROPAGATE_COMMENT" ColumnName="PROPAGATE_COMMENT" />
+          <ScalarProperty Name="DELIVERY_ORDER" ColumnName="DELIVERY_ORDER" />
+          <ScalarProperty Name="RECIPIENT_KEY" ColumnName="RECIPIENT_KEY" />
+          <ScalarProperty Name="EXTENSION_ID" ColumnName="EXTENSION_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__REPSCHEMA">
+      <EntityTypeMapping TypeName="Model.REPCAT__REPSCHEMA">
+        <MappingFragment StoreEntitySet="REPCAT$_REPSCHEMA">
+          <ScalarProperty Name="GOWNER" ColumnName="GOWNER" />
+          <ScalarProperty Name="SNAME" ColumnName="SNAME" />
+          <ScalarProperty Name="DBLINK" ColumnName="DBLINK" />
+          <ScalarProperty Name="MASTERDEF" ColumnName="MASTERDEF" />
+          <ScalarProperty Name="SNAPMASTER" ColumnName="SNAPMASTER" />
+          <ScalarProperty Name="MASTER_COMMENT" ColumnName="MASTER_COMMENT" />
+          <ScalarProperty Name="MASTER" ColumnName="MASTER" />
+          <ScalarProperty Name="PROP_UPDATES" ColumnName="PROP_UPDATES" />
+          <ScalarProperty Name="MY_DBLINK" ColumnName="MY_DBLINK" />
+          <ScalarProperty Name="EXTENSION_ID" ColumnName="EXTENSION_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__RESOL_STATS_CONTROL">
+      <EntityTypeMapping TypeName="Model.REPCAT__RESOL_STATS_CONTROL">
+        <MappingFragment StoreEntitySet="REPCAT$_RESOL_STATS_CONTROL">
+          <ScalarProperty Name="SNAME" ColumnName="SNAME" />
+          <ScalarProperty Name="ONAME" ColumnName="ONAME" />
+          <ScalarProperty Name="CREATED" ColumnName="CREATED" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="STATUS_UPDATE_DATE" ColumnName="STATUS_UPDATE_DATE" />
+          <ScalarProperty Name="PURGED_DATE" ColumnName="PURGED_DATE" />
+          <ScalarProperty Name="LAST_PURGE_START_DATE" ColumnName="LAST_PURGE_START_DATE" />
+          <ScalarProperty Name="LAST_PURGE_END_DATE" ColumnName="LAST_PURGE_END_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__RESOLUTION">
+      <EntityTypeMapping TypeName="Model.REPCAT__RESOLUTION">
+        <MappingFragment StoreEntitySet="REPCAT$_RESOLUTION">
+          <ScalarProperty Name="SNAME" ColumnName="SNAME" />
+          <ScalarProperty Name="ONAME" ColumnName="ONAME" />
+          <ScalarProperty Name="CONFLICT_TYPE_ID" ColumnName="CONFLICT_TYPE_ID" />
+          <ScalarProperty Name="REFERENCE_NAME" ColumnName="REFERENCE_NAME" />
+          <ScalarProperty Name="SEQUENCE_NO" ColumnName="SEQUENCE_NO" />
+          <ScalarProperty Name="METHOD_NAME" ColumnName="METHOD_NAME" />
+          <ScalarProperty Name="FUNCTION_NAME" ColumnName="FUNCTION_NAME" />
+          <ScalarProperty Name="PRIORITY_GROUP" ColumnName="PRIORITY_GROUP" />
+          <ScalarProperty Name="RESOLUTION_COMMENT" ColumnName="RESOLUTION_COMMENT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__RESOLUTION_METHOD">
+      <EntityTypeMapping TypeName="Model.REPCAT__RESOLUTION_METHOD">
+        <MappingFragment StoreEntitySet="REPCAT$_RESOLUTION_METHOD">
+          <ScalarProperty Name="CONFLICT_TYPE_ID" ColumnName="CONFLICT_TYPE_ID" />
+          <ScalarProperty Name="METHOD_NAME" ColumnName="METHOD_NAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__SITES_NEW">
+      <EntityTypeMapping TypeName="Model.REPCAT__SITES_NEW">
+        <MappingFragment StoreEntitySet="REPCAT$_SITES_NEW">
+          <ScalarProperty Name="EXTENSION_ID" ColumnName="EXTENSION_ID" />
+          <ScalarProperty Name="GOWNER" ColumnName="GOWNER" />
+          <ScalarProperty Name="GNAME" ColumnName="GNAME" />
+          <ScalarProperty Name="DBLINK" ColumnName="DBLINK" />
+          <ScalarProperty Name="FULL_INSTANTIATION" ColumnName="FULL_INSTANTIATION" />
+          <ScalarProperty Name="MASTER_STATUS" ColumnName="MASTER_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__TEMPLATE_OBJECTS">
+      <EntityTypeMapping TypeName="Model.REPCAT__TEMPLATE_OBJECTS">
+        <MappingFragment StoreEntitySet="REPCAT$_TEMPLATE_OBJECTS">
+          <ScalarProperty Name="TEMPLATE_OBJECT_ID" ColumnName="TEMPLATE_OBJECT_ID" />
+          <ScalarProperty Name="REFRESH_TEMPLATE_ID" ColumnName="REFRESH_TEMPLATE_ID" />
+          <ScalarProperty Name="OBJECT_NAME" ColumnName="OBJECT_NAME" />
+          <ScalarProperty Name="OBJECT_TYPE" ColumnName="OBJECT_TYPE" />
+          <ScalarProperty Name="OBJECT_VERSION_" ColumnName="OBJECT_VERSION#" />
+          <ScalarProperty Name="DDL_TEXT" ColumnName="DDL_TEXT" />
+          <ScalarProperty Name="MASTER_ROLLBACK_SEG" ColumnName="MASTER_ROLLBACK_SEG" />
+          <ScalarProperty Name="DERIVED_FROM_SNAME" ColumnName="DERIVED_FROM_SNAME" />
+          <ScalarProperty Name="DERIVED_FROM_ONAME" ColumnName="DERIVED_FROM_ONAME" />
+          <ScalarProperty Name="FLAVOR_ID" ColumnName="FLAVOR_ID" />
+          <ScalarProperty Name="SCHEMA_NAME" ColumnName="SCHEMA_NAME" />
+          <ScalarProperty Name="DDL_NUM" ColumnName="DDL_NUM" />
+          <ScalarProperty Name="TEMPLATE_REFGROUP_ID" ColumnName="TEMPLATE_REFGROUP_ID" />
+          <ScalarProperty Name="FLAGS" ColumnName="FLAGS" />
+          <ScalarProperty Name="SPARE1" ColumnName="SPARE1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__TEMPLATE_PARMS">
+      <EntityTypeMapping TypeName="Model.REPCAT__TEMPLATE_PARMS">
+        <MappingFragment StoreEntitySet="REPCAT$_TEMPLATE_PARMS">
+          <ScalarProperty Name="TEMPLATE_PARAMETER_ID" ColumnName="TEMPLATE_PARAMETER_ID" />
+          <ScalarProperty Name="REFRESH_TEMPLATE_ID" ColumnName="REFRESH_TEMPLATE_ID" />
+          <ScalarProperty Name="PARAMETER_NAME" ColumnName="PARAMETER_NAME" />
+          <ScalarProperty Name="DEFAULT_PARM_VALUE" ColumnName="DEFAULT_PARM_VALUE" />
+          <ScalarProperty Name="PROMPT_STRING" ColumnName="PROMPT_STRING" />
+          <ScalarProperty Name="USER_OVERRIDE" ColumnName="USER_OVERRIDE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__TEMPLATE_REFGROUPS">
+      <EntityTypeMapping TypeName="Model.REPCAT__TEMPLATE_REFGROUPS">
+        <MappingFragment StoreEntitySet="REPCAT$_TEMPLATE_REFGROUPS">
+          <ScalarProperty Name="REFRESH_GROUP_ID" ColumnName="REFRESH_GROUP_ID" />
+          <ScalarProperty Name="REFRESH_GROUP_NAME" ColumnName="REFRESH_GROUP_NAME" />
+          <ScalarProperty Name="REFRESH_TEMPLATE_ID" ColumnName="REFRESH_TEMPLATE_ID" />
+          <ScalarProperty Name="ROLLBACK_SEG" ColumnName="ROLLBACK_SEG" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+          <ScalarProperty Name="INTERVAL" ColumnName="INTERVAL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__TEMPLATE_SITES">
+      <EntityTypeMapping TypeName="Model.REPCAT__TEMPLATE_SITES">
+        <MappingFragment StoreEntitySet="REPCAT$_TEMPLATE_SITES">
+          <ScalarProperty Name="TEMPLATE_SITE_ID" ColumnName="TEMPLATE_SITE_ID" />
+          <ScalarProperty Name="REFRESH_TEMPLATE_NAME" ColumnName="REFRESH_TEMPLATE_NAME" />
+          <ScalarProperty Name="REFRESH_GROUP_NAME" ColumnName="REFRESH_GROUP_NAME" />
+          <ScalarProperty Name="TEMPLATE_OWNER" ColumnName="TEMPLATE_OWNER" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="SITE_NAME" ColumnName="SITE_NAME" />
+          <ScalarProperty Name="REPAPI_SITE_ID" ColumnName="REPAPI_SITE_ID" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="REFRESH_TEMPLATE_ID" ColumnName="REFRESH_TEMPLATE_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="INSTANTIATION_DATE" ColumnName="INSTANTIATION_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__TEMPLATE_STATUS">
+      <EntityTypeMapping TypeName="Model.REPCAT__TEMPLATE_STATUS">
+        <MappingFragment StoreEntitySet="REPCAT$_TEMPLATE_STATUS">
+          <ScalarProperty Name="TEMPLATE_STATUS_ID" ColumnName="TEMPLATE_STATUS_ID" />
+          <ScalarProperty Name="STATUS_TYPE_NAME" ColumnName="STATUS_TYPE_NAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__TEMPLATE_TARGETS">
+      <EntityTypeMapping TypeName="Model.REPCAT__TEMPLATE_TARGETS">
+        <MappingFragment StoreEntitySet="REPCAT$_TEMPLATE_TARGETS">
+          <ScalarProperty Name="TEMPLATE_TARGET_ID" ColumnName="TEMPLATE_TARGET_ID" />
+          <ScalarProperty Name="TARGET_DATABASE" ColumnName="TARGET_DATABASE" />
+          <ScalarProperty Name="TARGET_COMMENT" ColumnName="TARGET_COMMENT" />
+          <ScalarProperty Name="CONNECT_STRING" ColumnName="CONNECT_STRING" />
+          <ScalarProperty Name="SPARE1" ColumnName="SPARE1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__TEMPLATE_TYPES">
+      <EntityTypeMapping TypeName="Model.REPCAT__TEMPLATE_TYPES">
+        <MappingFragment StoreEntitySet="REPCAT$_TEMPLATE_TYPES">
+          <ScalarProperty Name="TEMPLATE_TYPE_ID" ColumnName="TEMPLATE_TYPE_ID" />
+          <ScalarProperty Name="TEMPLATE_DESCRIPTION" ColumnName="TEMPLATE_DESCRIPTION" />
+          <ScalarProperty Name="FLAGS" ColumnName="FLAGS" />
+          <ScalarProperty Name="SPARE1" ColumnName="SPARE1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__USER_AUTHORIZATIONS">
+      <EntityTypeMapping TypeName="Model.REPCAT__USER_AUTHORIZATIONS">
+        <MappingFragment StoreEntitySet="REPCAT$_USER_AUTHORIZATIONS">
+          <ScalarProperty Name="USER_AUTHORIZATION_ID" ColumnName="USER_AUTHORIZATION_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="REFRESH_TEMPLATE_ID" ColumnName="REFRESH_TEMPLATE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__USER_PARM_VALUES">
+      <EntityTypeMapping TypeName="Model.REPCAT__USER_PARM_VALUES">
+        <MappingFragment StoreEntitySet="REPCAT$_USER_PARM_VALUES">
+          <ScalarProperty Name="USER_PARAMETER_ID" ColumnName="USER_PARAMETER_ID" />
+          <ScalarProperty Name="TEMPLATE_PARAMETER_ID" ColumnName="TEMPLATE_PARAMETER_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="PARM_VALUE" ColumnName="PARM_VALUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AQ__INTERNET_AGENT_PRIVS">
+      <EntityTypeMapping TypeName="Model.AQ__INTERNET_AGENT_PRIVS">
+        <MappingFragment StoreEntitySet="AQ$_INTERNET_AGENT_PRIVS">
+          <ScalarProperty Name="AGENT_NAME" ColumnName="AGENT_NAME" />
+          <ScalarProperty Name="DB_USERNAME" ColumnName="DB_USERNAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGMNR_PARAMETER_">
+      <EntityTypeMapping TypeName="Model.LOGMNR_PARAMETER_">
+        <MappingFragment StoreEntitySet="LOGMNR_PARAMETER$">
+          <ScalarProperty Name="SESSION_" ColumnName="SESSION#" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="VALUE" ColumnName="VALUE" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="SCN" ColumnName="SCN" />
+          <ScalarProperty Name="SPARE1" ColumnName="SPARE1" />
+          <ScalarProperty Name="SPARE2" ColumnName="SPARE2" />
+          <ScalarProperty Name="SPARE3" ColumnName="SPARE3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGSTDBY_APPLY_MILESTONE">
+      <EntityTypeMapping TypeName="Model.LOGSTDBY_APPLY_MILESTONE">
+        <MappingFragment StoreEntitySet="LOGSTDBY$APPLY_MILESTONE">
+          <ScalarProperty Name="SESSION_ID" ColumnName="SESSION_ID" />
+          <ScalarProperty Name="COMMIT_SCN" ColumnName="COMMIT_SCN" />
+          <ScalarProperty Name="COMMIT_TIME" ColumnName="COMMIT_TIME" />
+          <ScalarProperty Name="SYNCH_SCN" ColumnName="SYNCH_SCN" />
+          <ScalarProperty Name="EPOCH" ColumnName="EPOCH" />
+          <ScalarProperty Name="PROCESSED_SCN" ColumnName="PROCESSED_SCN" />
+          <ScalarProperty Name="PROCESSED_TIME" ColumnName="PROCESSED_TIME" />
+          <ScalarProperty Name="FETCHLWM_SCN" ColumnName="FETCHLWM_SCN" />
+          <ScalarProperty Name="SPARE1" ColumnName="SPARE1" />
+          <ScalarProperty Name="SPARE2" ColumnName="SPARE2" />
+          <ScalarProperty Name="SPARE3" ColumnName="SPARE3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGSTDBY_EVENTS">
+      <EntityTypeMapping TypeName="Model.LOGSTDBY_EVENTS">
+        <MappingFragment StoreEntitySet="LOGSTDBY$EVENTS">
+          <ScalarProperty Name="EVENT_TIME" ColumnName="EVENT_TIME" />
+          <ScalarProperty Name="CURRENT_SCN" ColumnName="CURRENT_SCN" />
+          <ScalarProperty Name="COMMIT_SCN" ColumnName="COMMIT_SCN" />
+          <ScalarProperty Name="XIDUSN" ColumnName="XIDUSN" />
+          <ScalarProperty Name="XIDSLT" ColumnName="XIDSLT" />
+          <ScalarProperty Name="XIDSQN" ColumnName="XIDSQN" />
+          <ScalarProperty Name="ERRVAL" ColumnName="ERRVAL" />
+          <ScalarProperty Name="EVENT" ColumnName="EVENT" />
+          <ScalarProperty Name="FULL_EVENT" ColumnName="FULL_EVENT" />
+          <ScalarProperty Name="ERROR" ColumnName="ERROR" />
+          <ScalarProperty Name="SPARE1" ColumnName="SPARE1" />
+          <ScalarProperty Name="SPARE2" ColumnName="SPARE2" />
+          <ScalarProperty Name="SPARE3" ColumnName="SPARE3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGSTDBY_SKIP_SUPPORT">
+      <EntityTypeMapping TypeName="Model.LOGSTDBY_SKIP_SUPPORT">
+        <MappingFragment StoreEntitySet="LOGSTDBY$SKIP_SUPPORT">
+          <ScalarProperty Name="ACTION" ColumnName="ACTION" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="REG" ColumnName="REG" />
+          <ScalarProperty Name="SPARE1" ColumnName="SPARE1" />
+          <ScalarProperty Name="SPARE2" ColumnName="SPARE2" />
+          <ScalarProperty Name="SPARE3" ColumnName="SPARE3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MVIEW__ADV_BASETABLE">
+      <EntityTypeMapping TypeName="Model.MVIEW__ADV_BASETABLE">
+        <MappingFragment StoreEntitySet="MVIEW$_ADV_BASETABLE">
+          <ScalarProperty Name="COLLECTIONID_" ColumnName="COLLECTIONID#" />
+          <ScalarProperty Name="QUERYID_" ColumnName="QUERYID#" />
+          <ScalarProperty Name="OWNER" ColumnName="OWNER" />
+          <ScalarProperty Name="TABLE_NAME" ColumnName="TABLE_NAME" />
+          <ScalarProperty Name="TABLE_TYPE" ColumnName="TABLE_TYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MVIEW__ADV_FILTERINSTANCE">
+      <EntityTypeMapping TypeName="Model.MVIEW__ADV_FILTERINSTANCE">
+        <MappingFragment StoreEntitySet="MVIEW$_ADV_FILTERINSTANCE">
+          <ScalarProperty Name="RUNID_" ColumnName="RUNID#" />
+          <ScalarProperty Name="FILTERID_" ColumnName="FILTERID#" />
+          <ScalarProperty Name="SUBFILTERNUM_" ColumnName="SUBFILTERNUM#" />
+          <ScalarProperty Name="SUBFILTERTYPE" ColumnName="SUBFILTERTYPE" />
+          <ScalarProperty Name="STR_VALUE" ColumnName="STR_VALUE" />
+          <ScalarProperty Name="NUM_VALUE1" ColumnName="NUM_VALUE1" />
+          <ScalarProperty Name="NUM_VALUE2" ColumnName="NUM_VALUE2" />
+          <ScalarProperty Name="DATE_VALUE1" ColumnName="DATE_VALUE1" />
+          <ScalarProperty Name="DATE_VALUE2" ColumnName="DATE_VALUE2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MVIEW__ADV_INDEX">
+      <EntityTypeMapping TypeName="Model.MVIEW__ADV_INDEX">
+        <MappingFragment StoreEntitySet="MVIEW$_ADV_INDEX">
+          <ScalarProperty Name="RUNID_" ColumnName="RUNID#" />
+          <ScalarProperty Name="RANK_" ColumnName="RANK#" />
+          <ScalarProperty Name="MVINDEX_" ColumnName="MVINDEX#" />
+          <ScalarProperty Name="INDEX_TYPE" ColumnName="INDEX_TYPE" />
+          <ScalarProperty Name="INDEX_NAME" ColumnName="INDEX_NAME" />
+          <ScalarProperty Name="COLUMN_NAME" ColumnName="COLUMN_NAME" />
+          <ScalarProperty Name="INDEX_CONTENT" ColumnName="INDEX_CONTENT" />
+          <ScalarProperty Name="SUMMARY_OWNER" ColumnName="SUMMARY_OWNER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MVIEW__ADV_PARTITION">
+      <EntityTypeMapping TypeName="Model.MVIEW__ADV_PARTITION">
+        <MappingFragment StoreEntitySet="MVIEW$_ADV_PARTITION">
+          <ScalarProperty Name="RUNID_" ColumnName="RUNID#" />
+          <ScalarProperty Name="RANK_" ColumnName="RANK#" />
+          <ScalarProperty Name="SUMMARY_OWNER" ColumnName="SUMMARY_OWNER" />
+          <ScalarProperty Name="QUERY_TEXT" ColumnName="QUERY_TEXT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__FLAVORS">
+      <EntityTypeMapping TypeName="Model.REPCAT__FLAVORS">
+        <MappingFragment StoreEntitySet="REPCAT$_FLAVORS">
+          <ScalarProperty Name="FLAVOR_ID" ColumnName="FLAVOR_ID" />
+          <ScalarProperty Name="GOWNER" ColumnName="GOWNER" />
+          <ScalarProperty Name="GNAME" ColumnName="GNAME" />
+          <ScalarProperty Name="FNAME" ColumnName="FNAME" />
+          <ScalarProperty Name="CREATION_DATE" ColumnName="CREATION_DATE" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="PUBLISHED" ColumnName="PUBLISHED" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__REPGROUP_PRIVS">
+      <EntityTypeMapping TypeName="Model.REPCAT__REPGROUP_PRIVS">
+        <MappingFragment StoreEntitySet="REPCAT$_REPGROUP_PRIVS">
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="GOWNER" ColumnName="GOWNER" />
+          <ScalarProperty Name="GNAME" ColumnName="GNAME" />
+          <ScalarProperty Name="GLOBAL_FLAG" ColumnName="GLOBAL_FLAG" />
+          <ScalarProperty Name="CREATED" ColumnName="CREATED" />
+          <ScalarProperty Name="PRIVILEGE" ColumnName="PRIVILEGE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__RESOLUTION_STATISTICS">
+      <EntityTypeMapping TypeName="Model.REPCAT__RESOLUTION_STATISTICS">
+        <MappingFragment StoreEntitySet="REPCAT$_RESOLUTION_STATISTICS">
+          <ScalarProperty Name="SNAME" ColumnName="SNAME" />
+          <ScalarProperty Name="ONAME" ColumnName="ONAME" />
+          <ScalarProperty Name="CONFLICT_TYPE_ID" ColumnName="CONFLICT_TYPE_ID" />
+          <ScalarProperty Name="REFERENCE_NAME" ColumnName="REFERENCE_NAME" />
+          <ScalarProperty Name="METHOD_NAME" ColumnName="METHOD_NAME" />
+          <ScalarProperty Name="FUNCTION_NAME" ColumnName="FUNCTION_NAME" />
+          <ScalarProperty Name="PRIORITY_GROUP" ColumnName="PRIORITY_GROUP" />
+          <ScalarProperty Name="RESOLVED_DATE" ColumnName="RESOLVED_DATE" />
+          <ScalarProperty Name="PRIMARY_KEY_VALUE" ColumnName="PRIMARY_KEY_VALUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPCAT__SITE_OBJECTS">
+      <EntityTypeMapping TypeName="Model.REPCAT__SITE_OBJECTS">
+        <MappingFragment StoreEntitySet="REPCAT$_SITE_OBJECTS">
+          <ScalarProperty Name="TEMPLATE_SITE_ID" ColumnName="TEMPLATE_SITE_ID" />
+          <ScalarProperty Name="SNAME" ColumnName="SNAME" />
+          <ScalarProperty Name="ONAME" ColumnName="ONAME" />
+          <ScalarProperty Name="OBJECT_TYPE_ID" ColumnName="OBJECT_TYPE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SQLPLUS_PRODUCT_PROFILE">
+      <EntityTypeMapping TypeName="Model.SQLPLUS_PRODUCT_PROFILE">
+        <MappingFragment StoreEntitySet="SQLPLUS_PRODUCT_PROFILE">
+          <ScalarProperty Name="PRODUCT" ColumnName="PRODUCT" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="ATTRIBUTE" ColumnName="ATTRIBUTE" />
+          <ScalarProperty Name="SCOPE" ColumnName="SCOPE" />
+          <ScalarProperty Name="NUMERIC_VALUE" ColumnName="NUMERIC_VALUE" />
+          <ScalarProperty Name="CHAR_VALUE" ColumnName="CHAR_VALUE" />
+          <ScalarProperty Name="DATE_VALUE" ColumnName="DATE_VALUE" />
+          <ScalarProperty Name="LONG_VALUE" ColumnName="LONG_VALUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="REPCAT__OBJECT_PARMS" TypeName="Model.REPCAT__OBJECT_PARMS" StoreEntitySet="REPCAT$_OBJECT_PARMS">
+      <EndProperty Name="REPCAT__TEMPLATE_PARMS">
+        <ScalarProperty Name="TEMPLATE_PARAMETER_ID" ColumnName="TEMPLATE_PARAMETER_ID" />
+      </EndProperty>
+      <EndProperty Name="REPCAT__TEMPLATE_OBJECTS">
+        <ScalarProperty Name="TEMPLATE_OBJECT_ID" ColumnName="TEMPLATE_OBJECT_ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

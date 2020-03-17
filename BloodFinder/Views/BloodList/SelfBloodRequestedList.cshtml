@@ -1,0 +1,79 @@
+﻿@model IEnumerable<BloodFinder.Models.BloodList>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+
+<div class="row">
+    <div class="col-lg-1">
+        <br />
+        <img src="~/Photos/logo.png" alt="logo" height="90" width="90" />
+    </div>
+  
+    <div class="col-lg-11">
+        
+           
+      <br />
+      <div class="form-group">
+          <br />
+
+          <div class="col-md-offset-2 col-md-10 text-success">
+              <b> @ViewBag.Status </b>
+          </div>
+
+          <div class="btn-block pull-right">
+              <button type="button" class="btn btn-success pull-right"> <i class="fas fa-plus-circle"></i>&nbsp;<a href="~/Blood/RequestforBlood" class="text-white"><b>Make another request</b></a></button>
+          </div>
+          <br />
+          <br />
+          <div class="table-responsive-sm">
+              <table class="table table-striped">
+
+                  <thead class="thead-dark">
+
+
+                      <tr>
+                          <th>Name</th>
+
+                          <th>Address</th>
+
+
+                          <th>Phone Number</th>
+
+                          <th>E-mail</th>
+                          <th>Blood Group</th>
+                          <th>Message</th>
+                      </tr>
+                  </thead>
+
+                  <tbody>
+
+
+                      <tr>
+                          <td>@Html.DisplayFor(modelItem => Model.FirstOrDefault().Name) </td>
+                          <td>@Html.DisplayFor(modelItem => Model.FirstOrDefault().Address)</td>
+
+                          <td> @Html.DisplayFor(modelItem => Model.FirstOrDefault().PhoneNumber)</td>
+                          <td> @Html.DisplayFor(modelItem => Model.FirstOrDefault().Email)</td>
+                          <td> @Html.DisplayFor(modelItem => Model.FirstOrDefault().Bloodgroup)</td>
+                          <td> @Html.DisplayFor(modelItem => Model.FirstOrDefault().Message)</td>
+                      </tr>
+                  </tbody>
+              </table>
+              <button type="button" class="btn btn-primary"> <i class="fas fa-edit"></i>&nbsp;<a href="~/BloodList/EditRequested" class="text-white"><b>Edit</b></a></button>
+              <button type="button" class="btn btn-danger" onclick="return confirm('Are you sure you wish to delete this data?');"><i class="fas fa-trash-alt"></i>&nbsp;<a href="~/BloodList/DeleteRequested" class="text-white"><b>Delete</b></a></button>
+
+
+
+          </div>
+      </div>
+    </div>
+</div>

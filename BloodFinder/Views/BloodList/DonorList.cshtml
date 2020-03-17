@@ -1,0 +1,53 @@
+﻿@model IEnumerable<BloodFinder.Models.BloodList>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<br /><br />
+<div class="row">
+    <div class="col-lg-1">
+        <img src="~/Photos/logo.png" alt="logo" height="90" width="90" />
+    </div>
+    <div class="col-lg-11">
+       
+        <div class="table-responsive-sm">
+            <table class="table table-striped">
+
+                <thead class="thead-dark">
+
+
+                    <tr>
+                        <th>Name</th>
+
+                        <th>Address</th>
+                        <th>E-mail</th>
+
+                        <th>Phone Number</th>
+
+                        <th>Blood Group</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @foreach (var m in Model)
+                    {
+
+                        <tr>
+                            <td> @m.Name </td>
+                            <td>@m.Address</td>
+                            <td>@m.Email</td>
+                            <td> @m.PhoneNumber</td>
+                            <td> @m.Bloodgroup</td>
+
+                        </tr>
+
+
+
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

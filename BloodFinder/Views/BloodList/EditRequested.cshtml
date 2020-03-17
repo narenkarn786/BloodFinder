@@ -1,0 +1,73 @@
+﻿
+@model BloodFinder.Models.BloodList
+
+<style type="text/css">
+    .label {
+        font-weight: bold
+    }
+</style>
+
+<div class="container-fluid">
+    <div class="row">
+       
+        <div class="col-lg-2">
+
+            <br /><br />
+            <img src="~/Photos/logo.png" alt="logo" height="100" width="100" />
+        </div>
+
+
+
+
+
+        @using (Html.BeginForm("EditRequested", "BloodList", FormMethod.Post))
+        {
+
+        <div class="container">
+
+            <div class="form-group">
+                <label><b></b></label>
+                @Html.HiddenFor(modelItem => Model.userId, new { @class = "form-control" })
+
+            </div>
+            <h2><b><u>Edit Requested Details</u></b></h2>
+            <div class="form-group">
+                <label><b>Enter Name:</b></label>
+
+                @Html.EditorFor(modelItem => Model.Name, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+
+
+            <div class="form-group">
+                <label><b>Enter Address:</b></label>
+                @Html.EditorFor(modelItem => Model.Address, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            <div class="form-group">
+                <label><b>Enter E-mail:</b></label>
+                @Html.EditorFor(modelItem => Model.Email, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            <div class="form-group">
+                <label><b>Enter Blood Group:</b></label>
+                <br />
+                @Html.DropDownListFor(modelItem => Model.Bloodgroup, new SelectList(ViewBag.BloodRequestedList, Model.Bloodgroup), "* Select Blood Group *")
+
+            </div>
+
+            <div class="form-group">
+                <label><b>Any Message:</b></label>
+                @Html.EditorFor(modelItem => Model.Message, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+
+
+            <br />
+            <button type="submit" class="btn btn-success"><b>Update & Request</b></button>
+
+            <button type="reset" class="btn btn-danger"><b>Cancel</b></button>
+        </div>
+
+        }
+
+
+    </div>
+</div>
+

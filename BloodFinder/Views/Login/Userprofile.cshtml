@@ -1,0 +1,28 @@
+﻿@model BloodFinder.Models.Login
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<br /><br />
+<div class="row">
+    <div class="col-lg-2">
+        <img src="~/Photos/logo.png" alt="logo" height="90" width="90" />
+
+    </div>
+    <div class="col-lg-10">
+        <h2><b><u>Profile</u></b></h2>
+        @*@foreach (var m in Model)
+        {*@
+
+            <label><b>Username:</b> @Model.Username </label> <br />
+            <label><b>Contact Number:</b> @Model.Phone_Number</label><br />
+            <label><b>E-mail:</b> @Model.Email</label>
+
+        @*}*@
+        <br />
+        @*@Html.ActionLink("Edit", "Edituser", "Login")*@
+    </div>
+
+    </div>
+

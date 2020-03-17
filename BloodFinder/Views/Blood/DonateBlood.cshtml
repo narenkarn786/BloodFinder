@@ -1,0 +1,92 @@
+﻿
+@model BloodFinder.Models.Blood
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<br /><br />
+<style type="text/css">
+    .label {
+        font-weight: bold
+    }
+</style>
+
+
+<div class="container-fluid">
+    <div class="row">
+
+
+        <br />
+        <div class="col-lg-2">
+            <img src="~/Photos/logo.png" alt="logo" height="100" width="100" />
+        </div>
+
+        <div class="col-lg-10">
+            <div class="container">
+
+                <h2><b>@ViewBag.Message</b></h2>
+
+                @using (Html.BeginForm("DonateBlood", "Blood", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10 text-success">
+                            @ViewBag.Status
+                        </div>
+                    </div>
+
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group">
+                        <label><b>Enter Name:</b></label>
+                        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m=>m.Name, "", new { @class = "text-danger" })
+
+                    </div>
+
+                    <div class="form-group">
+                        <label><b>Enter Address:</b></label>
+                        @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Address, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group">
+                        <label><b>Enter E-mail:</b></label>
+                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group">
+                        <label><b>Enter Phone Number:</b></label>
+                        @Html.TextBoxFor(m => m.Phone_Number, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Phone_Number, "", new { @class = "text-danger" })
+                    </div>
+
+                    @*<div class="form-group">
+                        <label for="file"><b>Upload Image:</b></label><br />
+                        <input type="file" name="file" id="file" /><br><br>
+                        
+                    </div>*@
+
+                    <div class="form-group">
+                        <label><b>Enter Blood Group:</b></label>
+                        <br />
+                        @Html.DropDownListFor(m => m.BloodGroup, new SelectList(ViewBag.BloodDonarList), "* Select Blood Group *")
+                    </div>
+
+                    <br />
+                    <button type="submit" class="btn btn-success"><b>Save</b></button>
+
+                    <button type="reset" class="btn btn-danger"><b>Cancel</b></button>
+
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
+

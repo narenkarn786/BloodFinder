@@ -1,0 +1,65 @@
+﻿@model BloodFinder.Models.Blood
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<br /><br />
+<div class="container-fluid">
+    <div class="row">
+        <br />
+        <div class="col-lg-2">
+            <img src="~/Photos/logo.png" alt="logo" height="100" width="100" />
+        </div>
+        <div class="col-lg-10">
+
+            <div class="container">
+                <h2><b>@ViewBag.Message</b></h2>
+                @using (Html.BeginForm("RequestforBlood", "Blood", FormMethod.Post))
+                {
+                    <div class="form-group">
+                        <label><b>Enter Name:</b></label>
+                        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label><b>Enter Address:</b></label>
+                        @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label><b>Enter Phone Number:</b></label>
+                        @Html.TextBoxFor(m => m.Phone_Number, new { @class = "form-control" })
+                    </div>
+
+                    <div class="form-group">
+                        <label><b>Enter E-Mail:</b></label>
+                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label><b>Enter Blood Group:</b></label>
+                        <br />
+                        @Html.DropDownListFor(m => m.BloodGroup, new SelectList(ViewBag.BloodLists), "* Select Blood Group *")
+
+                    </div>
+
+                    <div class="form-group">
+                        <label><b>Any Message?:</b></label>
+                        @Html.TextBoxFor(m => m.Message, new { @class = "form-control" })
+                    </div>
+
+
+
+
+                    <button type="submit" class="btn btn-success">Request</button>
+                    
+                    <button type="reset" class="btn btn-danger">Cancel</button>
+
+                }
+            </div>
+        </div>
+    </div>
+
+</div>
